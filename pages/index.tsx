@@ -1,3 +1,5 @@
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
 import Head from "next/head";
 
 export default function Home() {
@@ -6,7 +8,23 @@ export default function Home() {
       <Head>
         <title>Guilherme's Portfolio</title>
       </Head>
-      <header className="text-xl">Hello!</header>
+      {/* Header */}
+      <Header />
+
+      {/* Hero */}
+      <section id="hero">
+        <Hero />
+      </section>
+
+      {/* About */}
+
+      {/* Experience */}
+
+      {/* Skills */}
+
+      {/* projects */}
+
+      {/* Contact Me */}
     </div>
   );
 }
