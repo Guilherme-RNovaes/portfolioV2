@@ -11,13 +11,12 @@ export default function WorkExperience({ }: Props) {
       <h3 className="pt-6 uppercase tracking-[20px] text-gray-500 text-2xl">
         Experience
       </h3>
-      <div>
+      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandator">
         <ExperienceCard />
         <ExperienceCard />
         <ExperienceCard />
         <ExperienceCard />
       </div>
-
     </div>
   )
 }
