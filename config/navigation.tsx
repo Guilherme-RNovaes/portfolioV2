@@ -1,6 +1,6 @@
 import React from "react";
 import { Home, BookUser, FolderKanban, Laptop, } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/_components/ui/button";
 import Link from "next/link";
 
 const navigationProps = [
@@ -26,24 +26,25 @@ const navigationProps = [
   },
 ]
 
-
 const firstNavigationItem = navigationProps[0];
 const otherNavigationItems = navigationProps.slice(1);
 
 export const navigationHome = (
-  <Button variant='ghost' className="w-52 h-30 flex flex-row justify-between">
+  < Button variant='ghost' className="w-52 h-30 flex flex-row justify-between" >
     <Link href={firstNavigationItem.href} className="flex flex-row items-center">
       {firstNavigationItem.icon}
       {firstNavigationItem.name}
     </Link>
-  </Button>
+  </Button >
 );
 
-export const navigationItens = otherNavigationItems.map((props) =>
-  <Button variant='ghost' className="w-52 h-30 flex flex-row justify-between">
-    <Link href={props.href} className="flex flex-row items-center">
-      {props.icon}
-      {props.name}
-    </Link>
-  </Button>
-)
+export const navigationItens = otherNavigationItems.map((props) => {
+  return (
+    <Button variant='ghost' className="w-52 h-30 flex flex-row justify-between">
+      <Link href={props.href} className="flex flex-row items-center">
+        {props.icon}
+        {props.name}
+      </Link>
+    </Button>
+  )
+})

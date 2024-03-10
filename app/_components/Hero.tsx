@@ -1,6 +1,7 @@
+"use client";
+
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter"
-import BackgroundCircles from "./BackgroundCircles";
 import Link from "next/link";
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 
@@ -18,7 +19,6 @@ export default function Hero({ }: Props) {
 
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
-      <BackgroundCircles />
       <Avatar
         className="relative h-32 w-32 mx-auto object-cover"
       >

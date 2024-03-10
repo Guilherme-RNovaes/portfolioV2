@@ -1,20 +1,12 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Head from "next/head";
-import About from "@/components/About"
-import WorkExperience from "@/components/WorkExperience";
-import Skills from "@/components/Skills";
-import Projects from "@/components/Projects";
-import ContactMe from "@/components/ContactMe";
+import Header from "@/app/_components/Header";
+import Hero from "@/app/_components/Hero";
+import About from "@/app/_components/About"
 
 export default function Home() {
   return (
-    <div className="bg-zinc-900 text-white z-0 scroll-smooth">
-      <Head>
-        <title>Guilherme Novaes | Portfolio</title>
-      </Head>
+    <div className="bg-slate-950 text-white z-0 scroll-smooth">
       {/* Header */}
-      <header className="fixed h-screen min-w-1xl border-r border-r-white ">
+      <header className="fixed h-screen border-r border-r-zinc-500/15 ">
         <Header />
       </header>
 
@@ -30,22 +22,19 @@ export default function Home() {
 
       {/* Experience */}
       <section id="experience" className="snap-center">
-        <WorkExperience />
       </section>
 
       {/* Skills */}
       <section id="skills" className="snap-start ">
-        <Skills />
       </section>
       {/* projects */}
       <section id="projects" className="snap-center">
-        <Projects />
       </section>
 
       {/* Contact Me */}
       <section id="contact" className="snap-center">
-        <ContactMe />
       </section>
     </div>
   );
 }
+

@@ -1,6 +1,6 @@
 import React from "react"
 import { Github, Linkedin, Mail, LinkIcon } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/app/_components/ui/button"
 import Link from "next/link"
 
 const social = [
@@ -22,11 +22,11 @@ const social = [
 ]
 
 export const socialButtons = social.map((social) =>
-  <Button variant='ghost' className="w-52 h-30 flex flex-row justify-between">
+  <Button variant='ghost' className="w-64 md:w-52 h-30 md:h-25 flex flex-row justify-between">
     <Link href={social.link} className="flex flex-row items-center">
       {social.icon}
       <p>{social.name}</p>
     </Link>
-    <LinkIcon className="w-4 h-4 text-blue-500" />
+    <LinkIcon className="w-4 h-4 text-blue-400" />
   </Button>
 )
