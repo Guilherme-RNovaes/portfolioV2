@@ -9,12 +9,14 @@ import ContactMe from "@/components/ContactMe";
 
 export default function Home() {
   return (
-    <div className="bg-black text-white h-screen snap-y snap-mandatory overflow-scroll z-0 scroll-smooth">
+    <div className="bg-zinc-900 text-white z-0 scroll-smooth">
       <Head>
         <title>Guilherme Novaes | Portfolio</title>
       </Head>
       {/* Header */}
-      <Header />
+      <header className="fixed h-screen min-w-1xl border-r border-r-white ">
+        <Header />
+      </header>
 
       {/* Hero */}
       <section id="hero" className="snap-start">

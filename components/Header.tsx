@@ -1,6 +1,8 @@
 import React from "react"
 import { motion } from "framer-motion"
-import { SocialIcon } from "react-social-icons"
+import { socialButtons } from "@/config/social"
+import { navigationItens } from "@/config/navigation"
+import { navigationHome } from "@/config/navigation"
 
 type Props = {}
 
@@ -11,7 +13,7 @@ export default function Header({ }: Props) {
         initial={{
           y: 50,
           opacity: 0,
-          scale: 0.8
+          scale: 1
         }}
         animate={{
           y: 0,
@@ -19,12 +21,20 @@ export default function Header({ }: Props) {
           scale: 1
         }}
         transition={{ duration: 0.5, }}
-        className="flex flex-col items-center"
+        className="flex flex-col items-start"
       >
-        <SocialIcon url="https://github.com/Guilherme-RNovaes" fgColor="gray" bgColor="transparent" />
-        <SocialIcon url="https://www.linkedin.com/in/guilherme-r-novaes/" fgColor="gray" bgColor="transparent" />
-        <SocialIcon url="https://api.whatsapp.com/send?phone=5516988448896&text=Ol%C3%A1,%20Guilherme!" fgColor="gray" bgColor="transparent" />
+        <div className="mt-5 mb-5">
+          {navigationHome}
+        </div>
+        <div className="mb-5">
+          <p className="pl-4 text-zinc-400 text-sm mb-4">Navegação</p>
+          {navigationItens}
+        </div>
+        <div>
+          <p className="pl-4 text-zinc-400 text-sm mb-4">Redes sociais</p>
+          {socialButtons}
+        </div>
       </motion.div>
-    </header>
+    </header >
   )
 }
