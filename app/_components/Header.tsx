@@ -10,7 +10,7 @@ type Props = {}
 
 export default function Header({ }: Props) {
   return (
-    <header className="sticky top-0 p-4 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
+    <header className="h-16 md:max-w-64 xl:max-w-70 fixed w-full md:h-full top-0 md:px-4 flex justify-center mx-auto z-20 md:items-start border-b md:border-r md:border-r-zinc-400/20 border-b-zinc-400/20">
       <motion.div
         initial={{
           y: 50,
@@ -23,7 +23,7 @@ export default function Header({ }: Props) {
           scale: 1
         }}
         transition={{ duration: 0.5, }}
-        className="flex flex-col items-start"
+        className="hidden md:flex flex-col items-center md:w-full"
       >
         <div className="mt-5 mb-5">
           {navigationHome}

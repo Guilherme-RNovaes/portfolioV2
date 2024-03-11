@@ -4,28 +4,47 @@ import React from "react";
 import userProps from "@/config/user";
 import { Avatar, AvatarFallback, AvatarImage } from "@/app/_components/ui/avatar";
 import { Badge } from "@/app/_components/ui/badge";
+import { motion } from "framer-motion";
 
 type Props = {}
 
 export default function Hero({ }: Props) {
   const stacks = userProps.stack.map((skill, index) =>
-    <Badge className="mr-2" variant='secondary' key={index}>{skill}</Badge>
+    <Badge className="mr-2 text-xs" variant='secondary' key={index}>{skill}</Badge>
   )
   return (
-    <div className="flex flex-row items-center justify-center mt-14">
-      <Avatar
-        className="relative h-24 w-24 mx-auto object-cover mr-5"
+    <div className="md:max-w-2xl md:w-full flex flex-row items-center justify-center mt-24">
+      <motion.div
+        initial={{
+          x: -40,
+          opacity: 0,
+        }}
+        animate={{
+          x: 0,
+          opacity: 1,
+        }}
+        transition={{ duration: 0.3, }}
       >
-        <AvatarImage src={userProps.url} />
-        <AvatarFallback>GN</AvatarFallback>
-      </Avatar>
-      <div className="z-20 flex flex-col items-start justify-start">
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">{userProps.profession}</h2>
-        <h1 className="text-4xl uppercase text-sky-200 lg:text-1xl font-semibold pb-2 tracking-widest">{userProps.name}</h1>
-        <div className="flex flex-row items-center">
+        <Avatar
+          className="h-20 w-20 md:h-24 md:w-24 mx-3 md:mx-5 object-cover"
+        >
+          <AvatarImage src={userProps.url} />
+          <AvatarFallback>GN</AvatarFallback>
+        </Avatar>
+      </motion.div>
+      <motion.div
+        initial={{ x: -40, opacity: 0 }}
+        animate={{ x: 0, opacity: 1, }}
+        transition={{ duration: 0.5, }}
+
+        className="flex flex-col items-start justify-start "
+      >
+        <h2 className="text-xs md:text-sm uppercase text-gray-500 pb-2 tracking-[6px] md:tracking-[15px]">{userProps.profession}</h2>
+        <h1 className="text-xl uppercase text-sky-200 md:text-4xl font-semibold pb-2 tracking-widest">{userProps.name}</h1>
+        <div className="w-full flex flex-row flex-wrap items-center">
           {stacks}
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

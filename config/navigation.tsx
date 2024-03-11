@@ -30,7 +30,7 @@ const firstNavigationItem = navigationProps[0];
 const otherNavigationItems = navigationProps.slice(1);
 
 export const navigationHome = (
-  < Button variant='ghost' className="w-52 h-30 flex flex-row justify-between" >
+  < Button variant='ghost' className="w-60 h-30 flex flex-row justify-between" >
     <Link href={firstNavigationItem.href} className="flex flex-row items-center">
       {firstNavigationItem.icon}
       {firstNavigationItem.name}
@@ -40,7 +40,7 @@ export const navigationHome = (
 
 export const navigationItens = otherNavigationItems.map((props) => {
   return (
-    <Button variant='ghost' className="w-52 h-30 flex flex-row justify-between">
+    <Button variant='ghost' className="w-60 h-30 flex flex-row justify-between">
       <Link href={props.href} className="flex flex-row items-center">
         {props.icon}
         {props.name}

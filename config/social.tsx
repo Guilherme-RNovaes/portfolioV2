@@ -22,7 +22,7 @@ const social = [
 ]
 
 export const socialButtons = social.map((social) =>
-  <Button variant='ghost' className="w-64 md:w-52 h-30 md:h-25 flex flex-row justify-between">
+  <Button variant='ghost' className="w-60 h-30 md:h-25 flex flex-row justify-between">
     <Link href={social.link} className="flex flex-row items-center">
       {social.icon}
       <p>{social.name}</p>
