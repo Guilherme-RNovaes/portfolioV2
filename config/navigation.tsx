@@ -25,6 +25,8 @@ const navigationProps = [
     href: '/technologies'
   },
 ]
+export default navigationProps;
+
 
 const firstNavigationItem = navigationProps[0];
 const otherNavigationItems = navigationProps.slice(1);

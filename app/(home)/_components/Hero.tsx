@@ -10,10 +10,10 @@ type Props = {}
 
 export default function Hero({ }: Props) {
   const stacks = userProps.stack.map((skill, index) =>
-    <Badge className="mr-2 text-xs" variant='secondary' key={index}>{skill}</Badge>
+    <Badge className="m-1 md:mr-1 text-xs cursor-pointer" variant='secondary' key={index}>{skill}</Badge>
   )
   return (
-    <div className="md:max-w-2xl md:w-full flex flex-row items-center justify-center mt-24">
+    <div className="md:max-w-4xl md:w-full flex flex-row items-center justify-start mt-24 mb-6">
       <motion.div
         initial={{
           x: -40,
@@ -40,7 +40,7 @@ export default function Hero({ }: Props) {
         className="flex flex-col items-start justify-start "
       >
         <h2 className="text-xs md:text-sm uppercase text-gray-500 pb-2 tracking-[6px] md:tracking-[15px]">{userProps.profession}</h2>
-        <h1 className="text-xl uppercase text-sky-200 md:text-4xl font-semibold pb-2 tracking-widest">{userProps.name}</h1>
+        <h1 className="text-xl uppercase text-sky-200 md:text-4xl font-semibold pb-1 tracking-widest">{userProps.name}</h1>
         <div className="w-full flex flex-row flex-wrap items-center">
           {stacks}
         </div>
