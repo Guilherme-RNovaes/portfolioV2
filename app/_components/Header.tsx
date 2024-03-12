@@ -3,10 +3,11 @@
 import React from "react"
 import { motion } from "framer-motion"
 import { socialButtons } from "@/config/social"
-import { navigationItens } from "@/config/navigation"
-import { navigationHome } from "@/config/navigation"
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Navbar from "@/config/Navbar";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Button } from "./ui/button";
+import { Menu } from "lucide-react";
 
 type Props = {}
 
@@ -41,6 +42,23 @@ export default function Header({ }: Props) {
           {socialButtons}
         </div>
       </motion.div>
+      <div className="flex md:hidden items-center justify-end w-full mr-3">
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button variant="outline"><Menu size={20} /></Button>
+          </SheetTrigger>
+          <SheetContent side='top' className="flex flex-col items-center border-none">
+            <div className="mb-5">
+              <Navbar isActiveRoute={isActiveRoute} />
+            </div>
+            <div>
+              <p className="pl-4 text-zinc-400 text-sm mb-4">Redes sociais</p>
+              {socialButtons}
+            </div>
+          </SheetContent>
+        </Sheet>
+
+      </div>
     </header >
   )
 }
