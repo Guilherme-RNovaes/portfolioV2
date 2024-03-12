@@ -1,32 +1,9 @@
 'use client'
 
 import { Button } from '@/app/_components/ui/button';
-import { BookUser, FolderKanban, Home, Laptop } from 'lucide-react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import navigationProps from './navigation';
 
-const navigationProps = [
-  {
-    name: 'Início',
-    icon: <Home className="w-4 h-4 mr-2" />,
-    href: '/',
-  },
-  {
-    name: 'Sobre',
-    icon: <BookUser className="w-4 h-4 mr-2" />,
-    href: '/about',
-  },
-  {
-    name: 'Projetos',
-    icon: <FolderKanban className="w-4 h-4 mr-2" />,
-    href: '/projects',
-  },
-  {
-    name: 'Tecnologias',
-    icon: <Laptop className="w-4 h-4 mr-2" />,
-    href: '/technologies',
-  },
-]
 
 const firstNavigationItem = navigationProps[0];
 const otherNavigationItems = navigationProps.slice(1);
