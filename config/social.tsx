@@ -17,13 +17,13 @@ const social = [
   {
     name: 'Email',
     icon: <Mail className="w-4 h-4 mr-2" />,
-    link: 'https://github.com/Guilherme-RNovaes'
+    link: 'mailto:guilherme00rogerio@gmail.com'
   }
 ]
 
 export const socialButtons = social.map((social) =>
   <Button variant='ghost' className="w-60 h-30 md:h-25 flex flex-row justify-between">
-    <Link href={social.link} className="flex flex-row items-center">
+    <Link href={social.link} target="_blank" rel="noreferrer noopener" className="flex flex-row items-center w-full">
       {social.icon}
       <p>{social.name}</p>
     </Link>
