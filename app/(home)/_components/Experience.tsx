@@ -47,7 +47,7 @@ export default function Experience({ }: Props) {
           {experiences}
         </div>
       </div>
-      <Button variant='outline' className="w-64 bg-blue-500">
+      <Button variant='outline' className="w-64">
         <Link href='#' className="w-full">Ver currículo</Link>
       </Button>
     </motion.div>
