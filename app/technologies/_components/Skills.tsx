@@ -43,7 +43,7 @@ export default function Skills({ }: Props) {
     >
       <div className="m-8">
         <h1 className="text-3xl font-semibold pb-2 tracking-widest">Tecnologias</h1>
-        <p>Explore as tecnologias que utilizo em meu dia a dia para o desenvolvimento!</p>
+        <p className="text-zinc-400">Explore as tecnologias que utilizo em meu dia a dia para o desenvolvimento!</p>
       </div>
       {renderSkills(frontEnd, "Front-end", 0.2)}
       {renderSkills(backEnd, "Back-end", 0.4)}

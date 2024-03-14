@@ -24,7 +24,7 @@ const Navbar = ({ isActiveRoute }: NavbarProps) => {
           asChild
           className="w-60 h-30 flex flex-row items-start justify-start"
         >
-          <Link href={firstNavigationItem.href}>
+          <Link href={firstNavigationItem.href} className='flex items-center justify-start'>
             <firstNavigationItem.icon className='w-4 h-4 mr-2' />
             {firstNavigationItem.name}
           </Link>
@@ -38,7 +38,7 @@ const Navbar = ({ isActiveRoute }: NavbarProps) => {
           asChild
           className="w-60 h-30 flex flex-row items-start justify-start"
         >
-          <Link href={props.href}>
+          <Link href={props.href} className='flex items-center justify-start'>
             <props.icon className='w-4 h-4 mr-2' />
             {props.name}
           </Link>

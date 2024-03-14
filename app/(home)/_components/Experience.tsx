@@ -43,7 +43,7 @@ export default function Experience({ }: Props) {
         <h3 className="uppercase tracking-widest font-semibold text-xl pb-4">
           Experiencia
         </h3>
-        <div className="flex flex-col gap-4 mx-6 md:mx-0 md:flex-row md:flex-wrap md:max-w-4xl justify-center md:justify-start items-start md:items-center">
+        <div className="flex flex-col gap-4 md:gap-x-9 mx-6 md:mx-0 md:flex-row md:flex-wrap md:max-w-4xl justify-center md:justify-start items-start md:items-center">
           {experiences}
         </div>
       </div>
