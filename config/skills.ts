@@ -3,7 +3,7 @@ import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 import { FaCss3Alt, FaHtml5, FaNodeJs, FaReact, FaSass } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import { RiJavascriptFill } from "react-icons/ri";
-import { SiExpress, SiLua, SiMariadb, SiMongodb, SiNextdotjs, SiOracle, SiPrisma, SiReactrouter, SiStyledcomponents, SiTailwindcss, SiVite } from "react-icons/si";
+import { SiAlacritty, SiArchlinux, SiDocker, SiExpress, SiFirebase, SiFirefox, SiGit, SiGithub, SiLua, SiMariadb, SiMongodb, SiNeovim, SiNextdotjs, SiOracle, SiPrisma, SiReactrouter, SiStyledcomponents, SiSupabase, SiTailwindcss, SiVim, SiVisualstudiocode, SiVite } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 
 export interface skill {
@@ -133,5 +133,63 @@ export const dataBase: skill[] = [
     skill: 'OracleSQL',
     icon: SiOracle,
     stack: 'database',
+  },
+  {
+    skill: 'Supabase',
+    icon: SiSupabase,
+    stack: 'database',
+  },
+  {
+    skill: 'Firebase',
+    icon: SiFirebase,
+    stack: 'database',
+  },
+  {
+    skill: 'Docker',
+    icon: SiDocker,
+    stack: 'database',
+  },
+]
+
+export const devEnviroment: skill[] = [
+  {
+    skill: 'Arch Linux',
+    icon: SiArchlinux,
+    stack: 'devenviroment',
+  },
+  {
+    skill: 'Alacritty',
+    icon: SiAlacritty,
+    stack: 'devenviroment',
+  },
+  {
+    skill: 'Vim',
+    icon: SiVim,
+    stack: 'devenviroment',
+  },
+  {
+    skill: 'Neovim',
+    icon: SiNeovim,
+    stack: 'devenviroment',
+  },
+  {
+    skill: 'VsCode',
+    icon: SiVisualstudiocode,
+    stack: 'devenviroment',
+  },
+  {
+    skill: 'Git',
+    icon: SiGit,
+    stack: 'devenviroment',
+  },
+  {
+    skill: 'Github',
+    icon: SiGithub,
+    stack: 'devenviroment',
+  },
+  {
+    skill: 'Firefox',
+    icon: SiFirefox,
+    stack: 'devenviroment',
   },
 ]
