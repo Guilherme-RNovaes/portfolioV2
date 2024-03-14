@@ -1,17 +1,28 @@
 "use client";
 
 import React from "react"
+import Navbar from "./Navbar";
 import { motion } from "framer-motion"
-import { socialButtons } from "@/config/social"
+import { socialProps } from "@/config/social";
 import { usePathname } from "next/navigation";
-import Navbar from "@/config/Navbar";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { Button } from "./ui/button";
-import { Menu } from "lucide-react";
+import { LinkIcon, Menu } from "lucide-react";
+import Link from "next/link";
 
 type Props = {}
 
 export default function Header({ }: Props) {
+
+  const socialButtons = socialProps.map((social) =>
+    <Button variant='ghost' className="w-60 h-30 md:h-25 flex flex-row justify-between">
+      <Link href={social.link} target="_blank" rel="noreferrer noopener" className="flex flex-row items-center w-full h-full">
+        <social.icon className="w-4 h-4 mr-2" />
+        <p>{social.name}</p>
+      </Link>
+      <LinkIcon className="w-4 h-4 text-blue-400" />
+    </Button>
+  )
   const router = usePathname();
 
   // Function to check if the route is active

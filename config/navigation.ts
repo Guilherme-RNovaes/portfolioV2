@@ -1,27 +1,34 @@
-import { Home, BookUser, FolderKanban, Laptop, } from "lucide-react";
+import { Home, BookUser, FolderKanban, Laptop, LucideIcon, } from "lucide-react";
 
-const navigationProps = [
+export type navigation = {
+  name: string;
+  icon: LucideIcon;
+  href: string;
+  variant: string
+}
+
+const navigationProps: navigation[] = [
   {
     name: 'Início',
-    icon: <Home className="w-4 h-4 mr-2" />,
+    icon: Home,
     href: '/',
     variant: 'secondary',
   },
   {
     name: 'Sobre',
-    icon: <BookUser className="w-4 h-4 mr-2" />,
+    icon: BookUser,
     href: '/about',
     variant: 'ghost',
   },
   {
     name: 'Projetos',
-    icon: <FolderKanban className="w-4 h-4 mr-2" />,
+    icon: FolderKanban,
     href: '/projects',
     variant: 'ghost',
   },
   {
     name: 'Tecnologias',
-    icon: <Laptop className="w-4 h-4 mr-2" />,
+    icon: Laptop,
     href: '/technologies',
     variant: 'ghost',
   },

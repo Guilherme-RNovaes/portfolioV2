@@ -2,7 +2,7 @@
 
 import { Button } from '@/app/_components/ui/button';
 import Link from 'next/link';
-import navigationProps from './navigation';
+import navigationProps from '@/config/navigation';
 
 
 const firstNavigationItem = navigationProps[0];
@@ -21,10 +21,11 @@ const Navbar = ({ isActiveRoute }: NavbarProps) => {
       <div className='mt-5 mb-5'>
         <Button
           variant={isActiveRoute(firstNavigationItem.href) ? 'secondary' : 'ghost' as ButtonVariant}
-          className="w-60 h-30 flex flex-row justify-between"
+          asChild
+          className="w-60 h-30 flex flex-row items-start justify-start"
         >
-          <Link href={firstNavigationItem.href} className="flex w-full h-full flex-row items-center">
-            {firstNavigationItem.icon}
+          <Link href={firstNavigationItem.href}>
+            <firstNavigationItem.icon className='w-4 h-4 mr-2' />
             {firstNavigationItem.name}
           </Link>
         </Button>
@@ -34,10 +35,11 @@ const Navbar = ({ isActiveRoute }: NavbarProps) => {
         <Button
           key={index}
           variant={isActiveRoute(props.href) ? 'secondary' : 'ghost' as ButtonVariant}
-          className="w-60 h-30 flex flex-row justify-between"
+          asChild
+          className="w-60 h-30 flex flex-row items-start justify-start"
         >
-          <Link href={props.href} className="flex w-full h-full flex-row items-center">
-            {props.icon}
+          <Link href={props.href}>
+            <props.icon className='w-4 h-4 mr-2' />
             {props.name}
           </Link>
         </Button>
