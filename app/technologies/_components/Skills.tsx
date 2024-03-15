@@ -12,23 +12,44 @@ type Skill = {
 
 type Props = {}
 
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.2,
+      staggerChildren: 0.1
+    }
+  }
+};
+
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1
+  }
+};
+
 export default function Skills({ }: Props) {
   const renderSkills = (skills: Skill[], title: string, delay: number) => (
     <motion.div
-      initial={{ x: -50 }}
-      animate={{ x: 0 }}
+      variants={container}
+      initial="hidden"
+      animate="visible"
       transition={{ duration: delay }}
       className="flex flex-col flex-wrap mb-8 items-center justify-center"
     >
       <h1 className="text-2xl font-semibold pb-4 px-4">{title}</h1>
       <div className="flex flex-row flex-wrap items-center justify-center">
         {skills.map((props, index) => (
-          <div key={index} className="m-2">
+          <motion.div variants={item} key={index} className="m-2">
             <Badge variant='secondary' className="flex flex-row items-center justify-start w-36 md:w-40 h-14 gap-2 px-4 py-2 rounded-xl">
               <props.icon size={22} />
               <p className="text-sm font-semibold">{props.skill}</p>
             </Badge>
-          </div>
+          </motion.div>
         ))}
       </div>
     </motion.div>
@@ -45,10 +66,10 @@ export default function Skills({ }: Props) {
         <h1 className="text-3xl font-semibold pb-2 tracking-widest">Tecnologias</h1>
         <p className="text-zinc-400">Explore as tecnologias que utilizo em meu dia a dia para o desenvolvimento!</p>
       </div>
-      {renderSkills(frontEnd, "Front-end", 0.2)}
-      {renderSkills(backEnd, "Back-end", 0.4)}
-      {renderSkills(dataBase, "Data-base", 0.6)}
-      {renderSkills(devEnviroment, "Ambiente Dev", 0.8)}
+      {renderSkills(frontEnd, "Front-end", 0.1)}
+      {renderSkills(backEnd, "Back-end", 0.2)}
+      {renderSkills(dataBase, "Data-base", 0.3)}
+      {renderSkills(devEnviroment, "Ambiente Dev", 0.4)}
     </motion.div>
   );
 }
