@@ -37,7 +37,7 @@ export default function Skills({ }: Props) {
     <motion.div
       variants={container}
       initial="hidden"
-      animate="visible"
+      whileInView="visible"
       transition={{ duration: delay }}
       className="flex flex-col flex-wrap mb-8 items-center justify-center"
     >
