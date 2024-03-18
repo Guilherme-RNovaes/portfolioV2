@@ -13,13 +13,13 @@ type Skill = {
 type Props = {}
 
 const container = {
-  hidden: { opacity: 1, scale: 0 },
+  hidden: { opacity: 1, x: -50 },
   visible: {
     opacity: 1,
-    scale: 1,
+    x: 0,
     transition: {
-      delayChildren: 0.2,
-      staggerChildren: 0.1
+      delayChildren: 0.3,
+      staggerChildren: 0.2
     }
   }
 };
