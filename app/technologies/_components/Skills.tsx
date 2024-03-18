@@ -64,7 +64,7 @@ export default function Skills({ }: Props) {
     >
       <div className="m-8">
         <h1 className="text-3xl font-semibold pb-2 tracking-widest">Tecnologias</h1>
-        <p className="text-zinc-400">Explore as tecnologias que utilizo em meu dia a dia para o desenvolvimento!</p>
+        <p className="text-zinc-400">Explore as tecnologias que utilizo em meu dia a dia para o desenvolvimento! Aqui, vou compartilhar um pouco sobre as ferramentas, linguagens de programação, aplicativos e sistemas operacionais que utilizo em meu trabalho diário de desenvolvimento. Desde linguagens de programação populares até ferramentas especializadas, cada elemento desempenha um papel fundamental na criação de soluções eficientes e inovadoras.</p>
       </div>
       {renderSkills(frontEnd, "Front-end", 0.1)}
       {renderSkills(backEnd, "Back-end", 0.2)}
