@@ -22,7 +22,7 @@ const item = {
 export default function Experience({ }: Props) {
   const experiences = experiencesList.map((props) => {
     return (
-      <motion.div variants={item} initial="hidden" animate="visible" transition={{ duration: 0.3 }} className="flex flex-row gap-4 mb-4 md:mb-0 py-3 md:p-3">
+      <motion.div variants={item} initial="hidden" animate="visible" transition={{ duration: 0.3 }} className="flex flex-row items-center gap-4 mb-4 md:mb-0 py-3 md:p-3">
         <Avatar className="bg-white text-black flex justify-center">
           <AvatarImage src={props.image} />
           <AvatarFallback className="mt-2"><Image /></AvatarFallback>
@@ -55,7 +55,7 @@ export default function Experience({ }: Props) {
           {experiences}
         </div>
       </div>
-      <Button variant='outline' className="w-64">
+      <Button variant='primary' className="w-64">
         <Link href='#' className="w-full">Ver currículo</Link>
       </Button>
     </motion.div>

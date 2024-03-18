@@ -24,7 +24,7 @@ const ProjectCard = ({ direction, name, img, description, link }: Props) => {
         <h1 className="pb-4 font-semibold text-xl">{name}</h1>
         <p className="text-sm text-zinc-400 pb-8">{description}</p>
         <div className="flex flex-row gap-4">
-          <Button asChild variant='outline'>
+          <Button asChild variant='primary'>
             <Link href={link} className="gap-2">
               <Link2 size={18} />
               Visit Page
