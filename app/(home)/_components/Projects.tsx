@@ -2,41 +2,26 @@
 
 import React from "react";
 import { projectProps } from "@/config/projects";
+import ProjectCard from "./ProjectCard";
 import Image from "next/image";
 import { Button } from "@/app/_components/ui/button";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-type Props = {}
+type Props = { direction: string }
 
-export default function Projects({ }: Props) {
-  const myProjects = projectProps.map((props) => props.direction === 'right' ? (
-    <div className="px-8 flex flex-col items-center justify-center">
-      <h1 className="pb-4 font-semibold text-xl">{props.name}</h1>
-      <div className="flex flex-row-reverse items-center justify-center">
-        <Image src={props.img} width={280} height={280} alt="project image" className="object-cover"></Image>
-        <div className="flex flex-col items-center justify-between">
-          <p className="text-sm text-zinc-400">{props.description}</p>
-          <Button asChild variant='outline'>
-            <Link href={props.link}>Visit Page</Link>
-          </Button>
-        </div>
-      </div>
-    </div>
-  ) : (
-    <div className="px-8 flex flex-col items-center justify-center">
-      <h1 className="pb-4 font-semibold text-xl">{props.name}</h1>
-      <div className="flex flex-row items-center justify-center">
-        <Image src={props.img} width={280} height={280} alt="project image" className="object-cover"></Image>
-        <div className="flex flex-col items-center justify-between">
-          <p className="text-sm text-zinc-400">{props.description}</p>
-          <Button asChild variant='outline'>
-            <Link href={props.link}>Visit Page</Link>
-          </Button>
-        </div>
-      </div>
-    </div>
+export default function Projects({ direction }: Props) {
+  const myProjects = projectProps.map((props) => (
+    <ProjectCard
+      key={props.name}
+      direction={props.direction}
+      name={props.name}
+      img={props.img}
+      description={props.description}
+      link={props.link}
+    />
   ))
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
