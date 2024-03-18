@@ -1,11 +1,11 @@
 "use client"
 
 import { Button } from "@/app/_components/ui/button";
-import { projectProps } from "@/config/projects";
 import { Github, Link2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
 type Props = {
   direction: string;
@@ -15,10 +15,28 @@ type Props = {
   link: string;
 }
 
+const item = {
+  hidden: { opacity: 0, x: -50 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      delayChildren: 0.8,
+      staggerChildren: 0.5
+    }
+  }
+};
+
 const ProjectCard = ({ direction, name, img, description, link }: Props) => {
   const isRightDirection = direction === 'right'
   return (
-    <div className={`flex flex-col ${isRightDirection ? 'md:flex-row-reverse' : 'md:flex-row'} items-center justify-center mb-8`}>
+    <motion.div
+      variants={item}
+      initial="hidden"
+      whileInView="visible"
+      transition={{ duration: 0.8 }}
+      className={`flex flex-col ${isRightDirection ? 'md:flex-row-reverse' : 'md:flex-row'} items-center justify-center mb-8`}
+    >
       <Image src={img} width={280} height={280} alt="project image" className="object-cover px-4 pb-8"></Image>
       <div className={`flex flex-col items-center ${isRightDirection ? 'md:items-start' : 'md:items-end md:text-right'}`}>
         <h1 className="pb-4 font-semibold text-xl">{name}</h1>
@@ -38,7 +56,7 @@ const ProjectCard = ({ direction, name, img, description, link }: Props) => {
           </Button>
         </div>
       </div>
-    </div >
+    </motion.div >
   )
 }
 
