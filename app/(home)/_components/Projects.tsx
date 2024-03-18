@@ -10,16 +10,33 @@ import { motion } from "framer-motion";
 type Props = {}
 
 export default function Projects({ }: Props) {
-  const myProjects = projectProps.map((props) =>
-    <div className="px-8 ">
-      <h1>{props.name}</h1>
-      <Image src={props.img} width={320} height={320} alt="project image"></Image>
-      <p>{props.description}</p>
-      <Button asChild variant='outline'>
-        <Link href={props.link}>Visit Page</Link>
-      </Button>
+  const myProjects = projectProps.map((props) => props.direction === 'right' ? (
+    <div className="px-8 flex flex-col items-center justify-center">
+      <h1 className="pb-4 font-semibold text-xl">{props.name}</h1>
+      <div className="flex flex-row-reverse items-center justify-center">
+        <Image src={props.img} width={280} height={280} alt="project image" className="object-cover"></Image>
+        <div className="flex flex-col items-center justify-between">
+          <p className="text-sm text-zinc-400">{props.description}</p>
+          <Button asChild variant='outline'>
+            <Link href={props.link}>Visit Page</Link>
+          </Button>
+        </div>
+      </div>
     </div>
-  )
+  ) : (
+    <div className="px-8 flex flex-col items-center justify-center">
+      <h1 className="pb-4 font-semibold text-xl">{props.name}</h1>
+      <div className="flex flex-row items-center justify-center">
+        <Image src={props.img} width={280} height={280} alt="project image" className="object-cover"></Image>
+        <div className="flex flex-col items-center justify-between">
+          <p className="text-sm text-zinc-400">{props.description}</p>
+          <Button asChild variant='outline'>
+            <Link href={props.link}>Visit Page</Link>
+          </Button>
+        </div>
+      </div>
+    </div>
+  ))
   return (
     <motion.div
       initial={{ opacity: 0 }}
