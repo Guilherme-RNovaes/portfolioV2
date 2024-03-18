@@ -3,15 +3,13 @@
 import React from "react";
 import { projectProps } from "@/config/projects";
 import ProjectCard from "./ProjectCard";
-import Image from "next/image";
-import { Button } from "@/app/_components/ui/button";
-import Link from "next/link";
 import { motion } from "framer-motion";
 
-type Props = { direction: string }
+type Props = {}
 
-export default function Projects({ direction }: Props) {
-  const myProjects = projectProps.map((props) => (
+export default function Projects({ }: Props) {
+  const firstProjects = projectProps.slice(0, 4)
+  const myProjects = firstProjects.map((props) => (
     <ProjectCard
       key={props.name}
       direction={props.direction}
