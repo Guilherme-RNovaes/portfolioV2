@@ -6,6 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
+import { Badge } from "./ui/badge";
+import { IconType } from "react-icons";
 
 type Props = {
   direction: string;
@@ -14,6 +16,7 @@ type Props = {
   description: string;
   link: string;
   source: string;
+  stacks: string[];
 }
 
 const item = {
@@ -29,7 +32,7 @@ const item = {
   }
 };
 
-const ProjectCard = ({ direction, name, img, description, link, source }: Props) => {
+const ProjectCard = ({ direction, name, img, description, stacks, link, source }: Props) => {
   const isRightDirection = direction === 'right'
   return (
     <motion.div
@@ -41,7 +44,14 @@ const ProjectCard = ({ direction, name, img, description, link, source }: Props)
       <Image src={img} width={360} height={270} alt="project image" className="object-cover px-4 pb-8"></Image>
       <div className={`flex flex-col items-center ${isRightDirection ? 'md:items-start' : 'md:items-end md:text-right'}`}>
         <h1 className="pb-4 font-semibold text-xl">{name}</h1>
-        <p className="text-sm text-zinc-400 pb-8">{description}</p>
+        <p className="text-sm text-zinc-400 pb-4">{description}</p>
+        <div className="flex items-center gap-2 mb-4">
+          {stacks.map((stack, index) => (
+            <Badge variant="outline" key={index}>
+              <p className="text-zinc-400 font-semibold">{stack}</p>
+            </Badge>
+          ))}
+        </div>
         <div className="flex flex-row gap-4">
           <Button asChild variant='primary'>
             <Link href={link} target="_blank" rel="noreferrer noopener" className="gap-2">

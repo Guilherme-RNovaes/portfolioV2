@@ -1,10 +1,7 @@
-import { IconType } from "react-icons";
-import { SiJavascript, SiTypescript } from "react-icons/si";
-
 export interface project {
   name: string;
   description: string;
-  stacks: [IconType[], string[]];
+  stacks: string[];
   link: string;
   source: string;
   img: string;
@@ -16,14 +13,8 @@ export const projectProps: project[] = [
     name: 'Example 1',
     description: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
     stacks: [
-      [
-        SiJavascript,
-        SiTypescript
-      ],
-      [
-        'Javascript',
-        'Typescript'
-      ]
+      'Javascript',
+      'Typescript'
     ],
     link: '/',
     source: 'https://github.com/Guilherme-RNovaes',
@@ -34,14 +25,8 @@ export const projectProps: project[] = [
     name: 'Example 2',
     description: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
     stacks: [
-      [
-        SiJavascript,
-        SiTypescript
-      ],
-      [
-        'Javascript',
-        'Typescript'
-      ]
+      'Javascript',
+      'Typescript'
     ],
     link: '/',
     source: 'https://github.com/Guilherme-RNovaes',
@@ -52,14 +37,8 @@ export const projectProps: project[] = [
     name: 'Example 3',
     description: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
     stacks: [
-      [
-        SiJavascript,
-        SiTypescript
-      ],
-      [
-        'Javascript',
-        'Typescript'
-      ]
+      'Javascript',
+      'Typescript'
     ],
     link: '/',
     source: 'https://github.com/Guilherme-RNovaes',
@@ -70,14 +49,8 @@ export const projectProps: project[] = [
     name: 'Example 4',
     description: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
     stacks: [
-      [
-        SiJavascript,
-        SiTypescript
-      ],
-      [
-        'Javascript',
-        'Typescript'
-      ]
+      'Javascript',
+      'Typescript'
     ],
     link: '/',
     source: 'https://github.com/Guilherme-RNovaes',
@@ -88,14 +61,8 @@ export const projectProps: project[] = [
     name: 'Example 5',
     description: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
     stacks: [
-      [
-        SiJavascript,
-        SiTypescript
-      ],
-      [
-        'Javascript',
-        'Typescript'
-      ]
+      'Javascript',
+      'Typescript'
     ],
     link: '/',
     source: 'https://github.com/Guilherme-RNovaes',

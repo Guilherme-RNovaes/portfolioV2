@@ -16,6 +16,7 @@ export default function Projects({ }: Props) {
       name={props.name}
       img={props.img}
       description={props.description}
+      stacks={props.stacks}
       link={props.link}
       source={props.source}
     />
