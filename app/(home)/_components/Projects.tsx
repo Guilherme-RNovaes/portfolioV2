@@ -2,7 +2,7 @@
 
 import React from "react";
 import { projectProps } from "@/config/projects";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "@/app/_components/ProjectCard";
 import { motion } from "framer-motion";
 
 type Props = {}
@@ -17,6 +17,7 @@ export default function Projects({ }: Props) {
       img={props.img}
       description={props.description}
       link={props.link}
+      source={props.source}
     />
   ))
 

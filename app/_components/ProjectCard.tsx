@@ -13,6 +13,7 @@ type Props = {
   img: string;
   description: string;
   link: string;
+  source: string;
 }
 
 const item = {
@@ -28,7 +29,7 @@ const item = {
   }
 };
 
-const ProjectCard = ({ direction, name, img, description, link }: Props) => {
+const ProjectCard = ({ direction, name, img, description, link, source }: Props) => {
   const isRightDirection = direction === 'right'
   return (
     <motion.div
@@ -43,13 +44,13 @@ const ProjectCard = ({ direction, name, img, description, link }: Props) => {
         <p className="text-sm text-zinc-400 pb-8">{description}</p>
         <div className="flex flex-row gap-4">
           <Button asChild variant='primary'>
-            <Link href={link} className="gap-2">
+            <Link href={link} target="_blank" rel="noreferrer noopener" className="gap-2">
               <Link2 size={18} />
               Visit Page
             </Link>
           </Button>
           <Button asChild variant='outline'>
-            <Link href={link} className="gap-2">
+            <Link href={source} target="_blank" rel="noreferrer noopener" className="gap-2">
               <Github size={18} />
               Source code
             </Link>
