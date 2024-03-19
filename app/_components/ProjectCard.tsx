@@ -44,7 +44,7 @@ const ProjectCard = ({ direction, name, img, description, stacks, link, source }
     >
       <Dialog>
         <DialogTrigger>
-          <Image src={img} width={260} height={170} alt="project image" className="mx-4 mb-8 md:mb-0 rounded-xl" />
+          <Image src={img} width={260} height={170} alt="project image" className="mx-4 mb-8 md:mb-0 rounded-xl cursor-zoom-in" />
         </DialogTrigger>
         <DialogContent className="object-cover">
           <Image src={img} width={860} height={770} alt="project image" className="rounded-lg" />
