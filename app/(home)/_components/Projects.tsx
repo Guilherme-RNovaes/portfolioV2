@@ -27,7 +27,7 @@ export default function Projects({ }: Props) {
   ))
 
   const navigationHref = (
-    <Link href={navigationProps[3].href} className="font-semibold text-blue-400 flex flex-row items-center">
+    <Link href={navigationProps[2].href} className="font-semibold text-blue-400 flex flex-row items-center">
       <LinkIcon className="w-4 h-4 mr-1" />
       Saiba mais
     </Link>
