@@ -1,6 +1,7 @@
 export interface User {
   name: string
   profession: string;
+  age: number;
   cel: string;
   stack: string[];
   about: string;
@@ -11,6 +12,7 @@ const userProps: User =
 {
   name: 'Guilherme Novaes',
   profession: 'Fullstack Developer',
+  age: 23,
   cel: '(16)98844-8896',
   stack: ['Javascript', 'Typescript', 'React', 'Nextjs', 'Nodejs', 'Expressjs', 'MySQL', 'MongoDB'],
   about: 'Olá! Sou Guilherme Rogério Novaes, um entusiasta da programação de 23 anos, apaixonado por criar soluções digitais e explorar as infinitas possibilidades do mundo da tecnologia. Ao longo dos últimos três anos, mergulhei fundo no universo da programação, concentrando meus esforços na área Fullstack, que me permite dominar tanto o desenvolvimento front-end quanto o back-end de aplicações web.',
