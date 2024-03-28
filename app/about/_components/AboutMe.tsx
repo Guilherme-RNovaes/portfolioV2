@@ -12,29 +12,29 @@ export default function AboutMe({ }: Props) {
 
   const personalInfo = (
     <div className="flex flex-col items-start justify-center w-full">
-      <ul className="flex flex-col gap-2 list-disc m-2 px-2">
+      <ul className="flex flex-col gap-2 list-disc text-gray-400 pl-6">
         <li>
           <div className="flex gap-2">
-            <p className="font-semibold">Nome:</p>
-            <p className="text-gray-400">{userProps.name}</p>
+            <p className="font-semibold text-white">Nome:</p>
+            <p>{userProps.name}</p>
           </div>
         </li>
         <li>
           <div className="flex gap-2">
-            <p className="font-semibold">Idade:</p>
-            <p className="text-gray-400">{userProps.age}</p>
+            <p className="font-semibold text-white">Idade:</p>
+            <p>{userProps.age}</p>
           </div>
         </li>
         <li>
           <div className="flex gap-2">
-            <p className="font-semibold">Profissão:</p>
-            <p className="text-gray-400">{userProps.profession}</p>
+            <p className="font-semibold text-white">Profissão:</p>
+            <p>{userProps.profession}</p>
           </div>
         </li>
         <li>
           <div className="flex gap-2">
-            <p className="font-semibold">Staks:</p>
-            <p className="text-gray-400">{SkillsItems}.</p>
+            <p className="font-semibold text-white">Staks:</p>
+            <p>{SkillsItems}.</p>
           </div>
         </li>
       </ul>
