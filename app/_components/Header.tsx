@@ -30,7 +30,7 @@ export default function Header({ }: Props) {
     return router === route;
   };
   return (
-    <header className="bg-slate-950 h-16 md:max-w-64 xl:max-w-70 fixed w-full md:h-full top-0 md:px-4 flex justify-center mx-auto z-20 md:items-start border-b md:border-r md:border-r-zinc-400/20 border-b-zinc-400/20">
+    <header className="bg-slate-950 h-16 md:max-w-64 xl:max-w-70 fixed w-full md:h-full top-0 md:px-4 flex justify-center mx-auto z-20 md:items-start border-b md:border-b-slate-950 md:border-r md:border-r-zinc-400/20 border-b-zinc-400/20">
       <motion.div
         initial={{
           y: 50,
