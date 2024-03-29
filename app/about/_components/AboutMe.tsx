@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import userProps from "@/config/user"
 import Image from "next/image"
 import archImage from "@/public/img/my_arch_system.png"
+import archImage2 from "@/public/img/arch_rofi.png"
 
 type Props = {}
 
@@ -98,9 +99,15 @@ export default function AboutMe({ }: Props) {
           <span className="text-zinc-400 text-xs">| "I use Arch, btw"</span>
         </h2>
         <p className="text-zinc-400 text-justify md:text-left">{userProps.aboutArch}</p>
-        <div className="flex flex-col items-center justify-center mt-4">
-          <Image src={archImage} alt="Imagem da minha área de trabalho" />
-          <p className="text-zinc-600 text-xs">Minha área de trabalho no arch linux</p>
+        <div className="flex flex-col md:flex-row gap-4 mt-8">
+          <div className="flex flex-col items-center justify-center">
+            <Image src={archImage} alt="Imagem da minha área de trabalho" className="rounded-xl md:max-w-[425px]" />
+            <p className="text-zinc-600 text-xs">Minha área de trabalho no arch linux</p>
+          </div>
+          <div className="flex flex-col items-center justify-center">
+            <Image src={archImage2} alt="Imagem da minha área de trabalho" className="rounded-xl md:max-w-[425px]" />
+            <p className="text-zinc-600 text-xs">Minha área de trabalho no arch linux</p>
+          </div>
         </div>
       </motion.div>
     </motion.div>
