@@ -3,6 +3,8 @@
 import React from "react"
 import { motion } from "framer-motion"
 import userProps from "@/config/user"
+import Image from "next/image"
+import archImage from "@/public/img/my_arch_system.png"
 
 type Props = {}
 
@@ -82,17 +84,24 @@ export default function AboutMe({ }: Props) {
         className="m-8 md:w-full"
       >
         <h2 className="text-blue-400 font-semibold text-xl mb-4">Olá, é um prazer te conhecer!</h2>
-        <p className="text-zinc-400">{userProps.moreAbout}</p>
+        <p className="text-zinc-400 text-justify md:text-left">{userProps.moreAbout}</p>
       </motion.div>
       <motion.div
         variants={item}
         initial="hidden"
-        whileInView="visible"
+        whileInView="delay"
         viewport={{ once: true }}
         className="m-8 md:w-full"
       >
-        <h2 className="text-blue-400 font-semibold text-xl mb-4">Olá, é um prazer te conhecer!</h2>
-        <p className="text-zinc-400">{userProps.moreAbout}</p>
+        <h2 className="text-blue-400 font-semibold text-xl mb-4 flex flex-col">
+          A propósito, eu utilizo Arch linux
+          <span className="text-zinc-400 text-xs">| "I use Arch, btw"</span>
+        </h2>
+        <p className="text-zinc-400 text-justify md:text-left">{userProps.aboutArch}</p>
+        <div className="flex flex-col items-center justify-center mt-4">
+          <Image src={archImage} alt="Imagem da minha área de trabalho" />
+          <p className="text-zinc-600 text-xs">Minha área de trabalho no arch linux</p>
+        </div>
       </motion.div>
     </motion.div>
 
