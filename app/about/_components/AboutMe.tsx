@@ -7,6 +7,7 @@ import Image from "next/image"
 import archImage from "@/public/img/dev_enviroment.png"
 import archImage2 from "@/public/img/arch_rofi.png"
 import aboutMe from "@/public/img/about_me.jpeg"
+import PersonalInfo from "./PersonalInfo"
 
 type Props = {}
 
@@ -30,45 +31,6 @@ export default function AboutMe({ }: Props) {
       }
     },
   };
-
-  const SkillsItems = userProps.stack.join(', ')
-
-  const personalInfo = (
-    <div className="flex flex-col items-start justify-center w-full">
-      <ul className="flex flex-col gap-2 list-disc text-gray-400 pl-6">
-        <li>
-          <div className="flex gap-2">
-            <p className="font-semibold text-white">Nome:</p>
-            <p>{userProps.name}</p>
-          </div>
-        </li>
-        <li>
-          <div className="flex gap-2">
-            <p className="font-semibold text-white">Idade:</p>
-            <p>{userProps.age}</p>
-          </div>
-        </li>
-        <li>
-          <div className="flex gap-2">
-            <p className="font-semibold text-white">Profissão:</p>
-            <p>{userProps.profession}</p>
-          </div>
-        </li>
-        <li>
-          <div className="flex gap-2">
-            <p className="font-semibold text-white">Staks:</p>
-            <p>{SkillsItems}.</p>
-          </div>
-        </li>
-        <li>
-          <div className="flex gap-2">
-            <p className="font-semibold text-white">Idiomas:</p>
-            <p>{userProps.languages}</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  )
   return (
     <motion.div
       className="flex flex-col mt-16 md:px-6 mx-4 max-w-4xl items-center justify-center md:w-full"
@@ -82,7 +44,7 @@ export default function AboutMe({ }: Props) {
       >
         <h1 className="text-3xl font-semibold pb-4 tracking-widest">Sobre mim</h1>
         <h2 className="text-blue-400 font-semibold text-xl mb-4">Informações Básicas</h2>
-        {personalInfo}
+        <PersonalInfo />
       </motion.div>
       <motion.div
         variants={item}
