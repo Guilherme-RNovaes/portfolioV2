@@ -4,8 +4,9 @@ import React from "react"
 import { motion } from "framer-motion"
 import userProps from "@/config/user"
 import Image from "next/image"
-import archImage from "@/public/img/my_arch_system.png"
+import archImage from "@/public/img/dev_enviroment.png"
 import archImage2 from "@/public/img/arch_rofi.png"
+import aboutMe from "@/public/img/about_me.jpeg"
 
 type Props = {}
 
@@ -59,6 +60,12 @@ export default function AboutMe({ }: Props) {
             <p>{SkillsItems}.</p>
           </div>
         </li>
+        <li>
+          <div className="flex gap-2">
+            <p className="font-semibold text-white">Idiomas:</p>
+            <p>{userProps.languages}</p>
+          </div>
+        </li>
       </ul>
     </div>
   )
@@ -85,7 +92,9 @@ export default function AboutMe({ }: Props) {
         className="m-8 md:w-full"
       >
         <h2 className="text-blue-400 font-semibold text-xl mb-4">Olá, é um prazer te conhecer!</h2>
-        <p className="text-zinc-400 text-justify md:text-left">{userProps.moreAbout}</p>
+        <Image src={aboutMe} alt="Imagem da minha área de trabalho" className="rounded-xl mb-8" />
+        <p className="text-zinc-400 text-justify md:text-left mb-4">{userProps.moreAbout}</p>
+        <p className="text-zinc-400 text-justify md:text-left">{userProps.aboutWork}</p>
       </motion.div>
       <motion.div
         variants={item}
@@ -102,11 +111,11 @@ export default function AboutMe({ }: Props) {
         <div className="flex flex-col md:flex-row gap-4 mt-8">
           <div className="flex flex-col items-center justify-center">
             <Image src={archImage} alt="Imagem da minha área de trabalho" className="rounded-xl md:max-w-[425px]" />
-            <p className="text-zinc-600 text-xs">Minha área de trabalho no arch linux</p>
+            <p className="text-zinc-600 text-xs italic">Um pouco sobre meu ambiente de desenvolvimento</p>
           </div>
           <div className="flex flex-col items-center justify-center">
             <Image src={archImage2} alt="Imagem da minha área de trabalho" className="rounded-xl md:max-w-[425px]" />
-            <p className="text-zinc-600 text-xs">Minha área de trabalho no arch linux</p>
+            <p className="text-zinc-600 text-xs italic">Minha área de trabalho</p>
           </div>
         </div>
       </motion.div>
