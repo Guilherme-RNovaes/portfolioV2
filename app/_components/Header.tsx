@@ -100,7 +100,7 @@ export default function Header({ }: NavbarProps) {
               </Button>
             ))}
             <div>
-              <p className="pl-4 text-zinc-400 text-sm mb-4">Redes sociais</p>
+              <p className="pl-4 text-zinc-400 text-sm my-4">Redes sociais</p>
               {socialButtons}
             </div>
           </SheetContent>
