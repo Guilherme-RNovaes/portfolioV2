@@ -62,8 +62,8 @@ export default function Header({ }: NavbarProps) {
           {socialButtons}
         </div>
       </motion.div>
-      <div className="flex md:hidden items-center justify-between w-full mr-3">
-        {isActiveRoute('/') ? '' : <UserAvatar />}
+      <div className={`flex md:hidden items-center w-full mr-3 ${isActiveRoute('/') ? 'justify-end' : 'justify-between'}`}>
+        {isActiveRoute('/') ? ' ' : <UserAvatar />}
         <Sheet>
           <SheetTrigger asChild>
             <Button variant="outline"><Menu size={20} /></Button>

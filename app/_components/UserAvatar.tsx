@@ -14,8 +14,8 @@ export default function UserAvatar({ }: Props) {
         <AvatarFallback>GN</AvatarFallback>
       </Avatar>
       <div>
-        <h1 className="text-sm font-semibold">{userProps.name}</h1>
-        <p className="text-xs text-gray-400">{userProps.profession}</p>
+        <p className="text-xs text-gray-400 tracking-[3px]">{userProps.profession}</p>
+        <h1 className="text-sm font-semibold tracking-widest">{userProps.name}</h1>
       </div>
     </div>
   )
