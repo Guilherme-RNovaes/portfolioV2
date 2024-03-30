@@ -10,6 +10,7 @@ import { Button } from "./ui/button";
 import { LinkIcon, Menu } from "lucide-react";
 import Link from "next/link";
 import navigationProps from "@/config/navigation";
+import UserAvatar from "./UserAvatar";
 
 type NavbarProps = {
   isActiveRoute: (route: string) => boolean;
@@ -61,7 +62,8 @@ export default function Header({ }: NavbarProps) {
           {socialButtons}
         </div>
       </motion.div>
-      <div className="flex md:hidden items-center justify-end w-full mr-3">
+      <div className="flex md:hidden items-center justify-between w-full mr-3">
+        {isActiveRoute('/') ? '' : <UserAvatar />}
         <Sheet>
           <SheetTrigger asChild>
             <Button variant="outline"><Menu size={20} /></Button>
