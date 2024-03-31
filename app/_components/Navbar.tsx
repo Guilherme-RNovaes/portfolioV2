@@ -3,6 +3,7 @@
 import { Button } from '@/app/_components/ui/button';
 import Link from 'next/link';
 import navigationProps from '@/config/navigation';
+import UserAvatar from './UserAvatar';
 
 
 const firstNavigationItem = navigationProps[0];
@@ -18,6 +19,9 @@ const Navbar = ({ isActiveRoute }: NavbarProps) => {
 
   return (
     <>
+      <div className='flex items-start justify-center mt-8 -ml-1'>
+        {isActiveRoute('/') ? ' ' : <UserAvatar />}
+      </div>
       <div className='mt-5 mb-5'>
         <Button
           variant={isActiveRoute(firstNavigationItem.href) ? 'secondary' : 'ghost' as ButtonVariant}

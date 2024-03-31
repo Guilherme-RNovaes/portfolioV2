@@ -12,11 +12,9 @@ import Link from "next/link";
 import navigationProps from "@/config/navigation";
 import UserAvatar from "./UserAvatar";
 
-type NavbarProps = {
-  isActiveRoute: (route: string) => boolean;
-};
+type Props = {};
 
-export default function Header({ }: NavbarProps) {
+export default function Header({ }: Props) {
   // Tipo para a propriedade 'variant' do botão
   type ButtonVariant = 'secondary' | 'ghost';
 

@@ -28,7 +28,7 @@ export default function Hero({ }: Props) {
         <Avatar
           className="h-20 w-20 md:h-24 md:w-24 mx-3 md:mx-5 object-cover"
         >
-          <AvatarImage src={userProps.url} />
+          <AvatarImage src={userProps.imageUrl} />
           <AvatarFallback>GN</AvatarFallback>
         </Avatar>
       </motion.div>

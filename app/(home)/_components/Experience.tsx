@@ -8,6 +8,7 @@ import { AvatarFallback } from "@radix-ui/react-avatar";
 import { Image } from "lucide-react";
 import { Button } from "@/app/_components/ui/button";
 import Link from "next/link";
+import userProps from "@/config/user";
 
 type Props = {}
 
@@ -60,7 +61,7 @@ export default function Experience({ }: Props) {
         </div>
       </div>
       <Button variant='primary' className="w-64">
-        <Link href='#' className="w-full">Ver currículo</Link>
+        <Link href={userProps.curriculum} download={userProps.curriculum} className="w-full">Ver currículo</Link>
       </Button>
     </motion.div>
   )
