@@ -26,10 +26,10 @@ const Navbar = ({ isActiveRoute }: NavbarProps) => {
         <Button
           variant={isActiveRoute(firstNavigationItem.href) ? 'secondary' : 'ghost' as ButtonVariant}
           asChild
-          className="w-60 h-30 flex flex-row items-start justify-start"
+          className="w-60 h-30 flex flex-row items-start justify-start group"
         >
           <Link href={firstNavigationItem.href} className='flex items-center justify-start'>
-            <firstNavigationItem.icon className={`${isActiveRoute(firstNavigationItem.href) ? 'text-blue-400' : ''} w-4 h-4 mr-2`} />
+            <firstNavigationItem.icon className={`${isActiveRoute(firstNavigationItem.href) ? 'text-blue-400' : ''} w-4 h-4 mr-2 group-hover:text-blue-400`} />
             {firstNavigationItem.name}
           </Link>
         </Button>
@@ -40,10 +40,10 @@ const Navbar = ({ isActiveRoute }: NavbarProps) => {
           key={index}
           variant={isActiveRoute(props.href) ? 'secondary' : 'ghost' as ButtonVariant}
           asChild
-          className="w-60 h-30 flex flex-row items-start justify-start"
+          className="w-60 h-30 flex flex-row items-start justify-start group"
         >
           <Link href={props.href} className='flex items-center justify-start'>
-            <props.icon className={`${isActiveRoute(props.href) ? 'text-blue-400' : ''} w-4 h-4 mr-2`} />
+            <props.icon className={`${isActiveRoute(props.href) ? 'text-blue-400' : ''} w-4 h-4 mr-2 group-hover:text-blue-400`} />
             {props.name}
           </Link>
         </Button>
