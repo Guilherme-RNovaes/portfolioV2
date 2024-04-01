@@ -32,7 +32,7 @@ export default function AboutMe({ }: Props) {
     },
   };
   return (
-    <motion.div
+    <div
       className="flex flex-col mt-16 md:px-6 mx-4 max-w-4xl items-center justify-center md:w-full"
     >
       <motion.div
@@ -42,7 +42,8 @@ export default function AboutMe({ }: Props) {
         viewport={{ once: true }}
         className="m-8 md:w-full"
       >
-        <h1 className="text-3xl font-semibold pb-4 tracking-widest">Sobre mim</h1>
+        <h1 className="text-3xl font-semibold mb-2 tracking-widest">Sobre mim</h1>
+        <p className="text-zinc-400 mb-6 text-justify md:text-left">Olá! Aqui você pode descobrir mais sobre mim, meus interesses, ferramentas que utilizo para desenvolver projetos e como pode entrar em contato comigo para uma conversa descontraída ou até mesmo discutir possíveis oportunidades de colaboração ou entrevista. Estou ansioso para compartilhar um pouco mais sobre quem sou e como posso contribuir para projetos futuros. Vamos nos conectar e explorar novas possibilidades juntos!</p>
         <h2 className="text-blue-400 font-semibold text-xl mb-4">Informações Básicas</h2>
         <PersonalInfo />
       </motion.div>
@@ -81,7 +82,6 @@ export default function AboutMe({ }: Props) {
           </div>
         </div>
       </motion.div>
-    </motion.div>
-
+    </div>
   )
 }
