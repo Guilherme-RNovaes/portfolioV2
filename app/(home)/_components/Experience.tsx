@@ -13,9 +13,9 @@ import userProps from "@/config/user";
 type Props = {}
 
 const item = {
-  hidden: { y: 20, opacity: 0 },
+  hidden: { x: 20, opacity: 0 },
   visible: {
-    y: 0,
+    x: 0,
     opacity: 1,
     transition: {
       delayChildren: 0.8,
@@ -27,7 +27,7 @@ const item = {
 export default function Experience({ }: Props) {
   const experiences = experiencesList.map((props) => {
     return (
-      <motion.div variants={item} initial="hidden" whileInView="visible" transition={{ duration: 0.3 }} className="flex flex-row items-center gap-4 mb-4 md:mb-0 py-3 md:p-3">
+      <motion.div variants={item} initial="hidden" whileInView="visible" transition={{ duration: 0.5 }} className="flex flex-row items-center gap-4 mb-4 md:mb-0 py-3 md:p-3">
         <Avatar className="bg-white text-black flex justify-center">
           <AvatarImage src={props.image} />
           <AvatarFallback className="mt-2"><Image /></AvatarFallback>
@@ -56,7 +56,7 @@ export default function Experience({ }: Props) {
         <h3 className="uppercase tracking-widest font-semibold text-xl pb-4">
           Experiencia
         </h3>
-        <div className="flex flex-col gap-4 md:gap-x-9 mx-6 md:mx-0 md:flex-row md:flex-wrap md:max-w-4xl justify-center md:justify-start items-start md:items-center">
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-4 md:px-24 md:pb-4 md:gap-x-20 mx-6 md:mx-0 md:max-w-4xl justify-center md:justify-start items-start md:items-center">
           {experiences}
         </div>
       </div>

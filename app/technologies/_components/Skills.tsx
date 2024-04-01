@@ -39,6 +39,7 @@ export default function Skills({ }: Props) {
       initial="hidden"
       whileInView="visible"
       transition={{ duration: delay }}
+      viewport={{ once: true }}
       className="flex flex-col flex-wrap mb-8 items-center justify-center"
     >
       <h1 className="text-2xl font-semibold pb-4 px-4">{title}</h1>
@@ -60,11 +61,12 @@ export default function Skills({ }: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
       className="flex flex-col mt-16 mx-4 max-w-4xl items-center md:items-start justify-center"
     >
       <div className="m-8">
         <h1 className="text-3xl font-semibold pb-2 tracking-widest">Tecnologias</h1>
-        <p className="text-zinc-400">Explore as tecnologias que utilizo em meu dia a dia para o desenvolvimento! Aqui, vou compartilhar um pouco sobre as ferramentas, linguagens de programação, aplicativos e sistemas operacionais que utilizo em meu trabalho diário de desenvolvimento. Desde linguagens de programação populares até ferramentas especializadas, cada elemento desempenha um papel fundamental na criação de soluções eficientes e inovadoras.</p>
+        <p className="text-zinc-400 text-justify md:text-start">Explore as tecnologias que utilizo em meu dia a dia para o desenvolvimento! Aqui, vou compartilhar um pouco sobre as ferramentas, linguagens de programação, aplicativos e sistemas operacionais que utilizo em meu trabalho diário de desenvolvimento. Desde linguagens de programação populares até ferramentas especializadas, cada elemento desempenha um papel fundamental na criação de soluções eficientes e inovadoras.</p>
       </div>
       {renderSkills(frontEnd, "Front-end", 0.1)}
       {renderSkills(backEnd, "Back-end", 0.2)}
