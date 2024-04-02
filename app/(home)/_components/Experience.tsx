@@ -37,7 +37,7 @@ export default function Experience({ }: Props) {
           <h2 className="text-xs md:text-sm font-normal text-zinc-400">{props.office}</h2>
           <div className="text-zinc-400 text-xs md:text-sm flex flex-row gap-2">
             <p>{props.startDate.slice(0, 4)}</p>
-            <p>-</p>
+            <span>-</span>
             <p className="">{props.endDate ? props.endDate.slice(0, 4) : 'Atualmente'}</p>
           </div>
         </div>

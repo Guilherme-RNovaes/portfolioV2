@@ -3,14 +3,14 @@
 import React from "react"
 import Navbar from "./Navbar";
 import { motion } from "framer-motion"
-import { socialProps } from "@/config/social";
 import { usePathname } from "next/navigation";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 import { Button } from "./ui/button";
-import { LinkIcon, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import Link from "next/link";
 import navigationProps from "@/config/navigation";
 import UserAvatar from "./UserAvatar";
+import SocialButtons from "./SocialButtons";
 
 type Props = {};
 
@@ -21,15 +21,6 @@ export default function Header({ }: Props) {
   const firstNavigationItem = navigationProps[0];
   const otherNavigationItems = navigationProps.slice(1);
 
-  const socialButtons = socialProps.map((social) =>
-    <Button variant='ghost' className="w-60 h-30 md:h-25 flex flex-row justify-between group">
-      <Link href={social.link} target="_blank" rel="noreferrer noopener" className="flex flex-row items-center w-full h-full">
-        <social.icon className="w-4 h-4 mr-2 group-hover:text-blue-400" />
-        <p>{social.name}</p>
-      </Link>
-      <LinkIcon className="w-4 h-4 text-blue-400" />
-    </Button>
-  )
   const router = usePathname();
 
   // Function to check if the route is active
@@ -57,7 +48,10 @@ export default function Header({ }: Props) {
         </div>
         <div>
           <p className="pl-4 text-zinc-400 text-sm mb-4">Redes sociais</p>
-          {socialButtons}
+          <SocialButtons
+            variants="ghost"
+            classes="w-60 h-30 md:h-25 flex flex-row justify-between group"
+          />
         </div>
       </motion.div>
       <div className={`flex md:hidden items-center w-full mr-3 ${isActiveRoute('/') ? 'justify-end' : 'justify-between'}`}>
@@ -101,11 +95,13 @@ export default function Header({ }: Props) {
             ))}
             <div>
               <p className="pl-4 text-zinc-400 text-sm my-4">Redes sociais</p>
-              {socialButtons}
+              <SocialButtons
+                variants="ghost"
+                classes="w-60 h-30 md:h-25 flex flex-row justify-between group"
+              />
             </div>
           </SheetContent>
         </Sheet>
-
       </div>
     </header >
   )

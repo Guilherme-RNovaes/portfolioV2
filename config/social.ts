@@ -1,8 +1,10 @@
-import { Github, Linkedin, Mail, LinkIcon, LucideIcon } from "lucide-react"
+import { Github, Linkedin, Mail, LucideIcon } from "lucide-react"
+import { IconType } from "react-icons";
+import { SiWhatsapp } from "react-icons/si";
 
 export type social = {
   name: string;
-  icon: LucideIcon;
+  icon: LucideIcon | IconType;
   link: string;
 }
 
@@ -21,5 +23,10 @@ export const socialProps: social[] = [
     name: 'Email',
     icon: Mail,
     link: 'mailto:guilherme00rogerio@gmail.com'
+  },
+  {
+    name: 'Whatsapp',
+    icon: SiWhatsapp,
+    link: 'https://api.whatsapp.com/send?phone=5516988448896&text=Ol%C3%A1,%20Guilherme!'
   }
 ]
