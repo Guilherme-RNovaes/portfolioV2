@@ -7,8 +7,9 @@ import { LinkIcon } from "lucide-react"
 type Props = {
   variants: string;
   classes: string;
+  iconLink: boolean;
 }
-export default function SocialButtons({ variants, classes }: Props) {
+export default function SocialButtons({ variants, classes, iconLink }: Props) {
   return (
     socialProps.map((social) =>
       <Button variant={variants as 'default'} className={classes}>
@@ -16,7 +17,11 @@ export default function SocialButtons({ variants, classes }: Props) {
           <social.icon className="w-4 h-4 mr-2 group-hover:text-blue-400" />
           <p>{social.name}</p>
         </Link>
-        <LinkIcon className="w-4 h-4 text-blue-400" />
+        {iconLink}
+        {iconLink === true ?
+          <LinkIcon className="w-4 h-4 text-blue-400" /> :
+          ''
+        }
       </Button>
     )
   )

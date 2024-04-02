@@ -1,9 +1,5 @@
-"use client";
-
 import React from "react";
 import AboutMe from "./_components/AboutMe";
-
-type Props = {}
 
 export default function Projects() {
   return (

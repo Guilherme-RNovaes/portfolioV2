@@ -51,6 +51,7 @@ export default function Header({ }: Props) {
           <SocialButtons
             variants="ghost"
             classes="w-60 h-30 md:h-25 flex flex-row justify-between group"
+            iconLink={true}
           />
         </div>
       </motion.div>
@@ -98,6 +99,7 @@ export default function Header({ }: Props) {
               <SocialButtons
                 variants="ghost"
                 classes="w-60 h-30 md:h-25 flex flex-row justify-between group"
+                iconLink={true}
               />
             </div>
           </SheetContent>

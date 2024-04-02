@@ -2,7 +2,7 @@
 
 import { CornerRightUp } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { FaArrowUp } from 'react-icons/fa';
+import { Button } from './ui/button';
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,13 +30,14 @@ const ScrollToTopButton = () => {
   }, []);
 
   return (
-    <button
-      className={`fixed bottom-4 right-4 md:bottom-10 md:right-10 bg-transparent border border-gray-400/20 text-white p-2 rounded-md transition-opacity ${isVisible ? 'opacity-100' : 'opacity-0'
+    <Button
+      className={`fixed bottom-4 right-4 md:bottom-10 bg-transparent md:right-10 p-2 transition-opacity ${isVisible ? 'opacity-100' : 'opacity-0'
         }`}
+      variant='outline'
       onClick={scrollToTop}
     >
       <CornerRightUp size={18} />
-    </button>
+    </Button>
   );
 };
 

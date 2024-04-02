@@ -74,12 +74,12 @@ export default function AboutMe({ }: Props) {
         <p className="text-zinc-400 text-justify md:text-left">{userProps.aboutArch}</p>
         <div className="flex flex-col md:flex-row gap-4 mt-8">
           <div className="flex flex-col items-center justify-center">
-            <Image src={archImage} alt="Imagem da minha área de trabalho" className="rounded-xl md:max-w-[425px] h-auto" />
-            <p className="text-zinc-600 text-xs italic">Um pouco sobre meu ambiente de desenvolvimento</p>
+            <Image src={archImage} alt="Imagem da minha área de trabalho" className="rounded-xl md:max-w-[425px] md:h-auto" />
+            <p className="text-zinc-600 text-xs italic text-center">Um pouco sobre meu ambiente de desenvolvimento</p>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <Image src={archImage2} alt="Imagem da minha área de trabalho" className="rounded-xl md:max-w-[425px] h-auto" />
-            <p className="text-zinc-600 text-xs italic">Minha área de trabalho</p>
+            <Image src={archImage2} alt="Imagem da minha área de trabalho" className="rounded-xl md:max-w-[425px] md:h-auto" />
+            <p className="text-zinc-600 text-xs italic text-center">Minha área de trabalho</p>
           </div>
         </div>
       </motion.div>
@@ -92,18 +92,19 @@ export default function AboutMe({ }: Props) {
       >
         <h2 className="text-blue-400 font-semibold text-xl mb-4 flex flex-col">Vamos trabalhar juntos?</h2>
         <div className="flex flex-col gap-4 mt-8">
-          <div className="flex flex-col gap-4 text-zinc-400 mb-8">
+          <div className="flex flex-col gap-4 text-zinc-400 mb-8 text-justify md:text-start">
             <p>
-              À medida que continuo aprimorando minhas habilidades como desenvolvedor fullstack, estou em busca de oportunidades que me permitam aplicar minha paixão pela tecnologia e pela inovação em projetos desafiadores e impactantes. Meu objetivo é não apenas contribuir para o desenvolvimento de soluções de ponta, mas também criar experiências digitais significativas que melhorem a vida das pessoas e impulsionem o crescimento dos negócios. Estou pronto para colaborar em projetos empolgantes e para enfrentar novos desafios que me permitam expandir meu conhecimento e habilidades.
+              À medida que continuo aprimorando minhas habilidades como desenvolvedor fullstack, estou em busca de oportunidades que me permitam aplicar minha paixão pela tecnologia e pela inovação em projetos desafiadores e impactantes. Meu objetivo não é apenas contribuir para o desenvolvimento de soluções de ponta, mas também criar experiências digitais significativas que melhorem a vida das pessoas e impulsionem o crescimento dos negócios. Estou pronto para colaborar em projetos empolgantes e para enfrentar novos desafios que me permitam expandir meus conhecimentos e habilidades.
             </p>
             <p>
-              Se você está buscando um desenvolvedor dedicado, criativo e motivado, por favor, não hesite em entrar em contato comigo. Estou ansioso para participar de conversas envolventes sobre como podemos trabalhar juntos para alcançar resultados incríveis. Fique à vontade para usar as informações de contato abaixo para se conectar comigo. Estou aberto a oportunidades de emprego, colaborações e discussões inspiradoras sobre o mundo fascinante da tecnologia e além.
+              Se você está buscando um desenvolvedor dedicado, criativo e motivado, não hesite em entrar em contato comigo. Estou ansioso para participar de conversas envolventes sobre como podemos trabalhar juntos para alcançar resultados incríveis. Fique à vontade para usar as informações de contato abaixo para se conectar comigo. Estou aberto a oportunidades de emprego, colaborações e discussões inspiradoras sobre o mundo fascinante da tecnologia e além.
             </p>
           </div>
-          <div className="flex flex-row align-center justify-between w-full">
+          <div className="grid grid-cols-2 gap-4 md:flex md:flex-row items-center justify-between w-full">
             <SocialButtons
               variants="outline"
-              classes="w-40 h-30 md:h-25 flex flex-row justify-between group"
+              classes="w-36 h-30 md:w-44 md:h-25 flex flex-row justify-between group"
+              iconLink={false}
             />
           </div>
         </div>
