@@ -68,4 +68,18 @@ export const projectProps: project[] = [
     img: '/img/pearson_hardman.png',
     direction: 'left',
   },
+  {
+    name: 'meu-primeiro-portfolio',
+    description: "Este foi meu primeiro portfolio o qual utilizeu por muito tempo, resolvi deixa-lo aqui pois quando o criei tinha acabado de aprender sobre React e este foi meu primeiro desafio a mim mesmo.",
+    stacks: [
+      'Javascript',
+      'React',
+      'Html',
+      'Css'
+    ],
+    link: 'https://gnovaes-portfolio.vercel.app/',
+    source: 'https://github.com/Guilherme-RNovaes/Portfolio',
+    img: '/img/first_portfolio.png',
+    direction: 'left',
+  },
 ]
