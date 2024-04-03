@@ -80,6 +80,6 @@ export const projectProps: project[] = [
     link: 'https://gnovaes-portfolio.vercel.app/',
     source: 'https://github.com/Guilherme-RNovaes/Portfolio',
     img: '/img/first_portfolio.png',
-    direction: 'left',
+    direction: 'right',
   },
 ]
