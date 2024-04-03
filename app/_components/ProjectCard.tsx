@@ -40,20 +40,20 @@ const ProjectCard = ({ direction, name, img, description, stacks, link, source }
       variants={item}
       initial="hidden"
       whileInView="visible"
-      className={`flex flex-col ${isRightDirection ? 'md:flex-row-reverse' : 'md:flex-row'} items-center justify-center mb-12`}
+      className={`flex flex-col ${isRightDirection ? 'md:flex-row-reverse' : 'md:flex-row'} items-center justify-between mb-12 gap-x-6`}
     >
       <Dialog>
-        <DialogTrigger>
-          <Image src={img} width={260} height={170} alt="project image" className="mb-8 md:mb-0 rounded-xl cursor-zoom-in" />
+        <DialogTrigger className="min-w-[280px] max-w-[280px] md:min-w-[380px] md:max-w-[380px] h-auto hover:scale-105 mb-8 md:mb-0 rounded-xl cursor-zoom-in transition-transform">
+          <Image src={img} width={380} height={380} alt="project image" className="rounded-xl" />
         </DialogTrigger>
-        <DialogContent className="object-cover">
-          <Image src={img} width={860} height={770} alt="project image" className="rounded-lg" />
+        <DialogContent className="md:min-w-[1080px]">
+          <Image src={img} width={1920} height={1080} alt="project image" className="rounded-lg" />
         </DialogContent>
       </Dialog>
       <div className={`flex flex-col items-center ${isRightDirection ? 'md:items-start' : 'md:items-end md:text-right'}`}>
         <h1 className="pb-4 font-semibold text-xl">{name}</h1>
         <p className="text-sm text-zinc-400 pb-4 max-w-xl">{description}</p>
-        <div className="flex items-center gap-2 mb-4">
+        <div className="flex items-center gap-2 mb-4 flex-wrap">
           {stacks.map((stack, index) => (
             <Badge variant="outline" key={index}>
               <p className="text-zinc-400 font-semibold">{stack}</p>
