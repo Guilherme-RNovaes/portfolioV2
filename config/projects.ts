@@ -22,7 +22,7 @@ export const projectProps: project[] = [
       'Supabase'
     ],
     link: '/production',
-    source: 'https://github.com/Guilherme-RNovaes/fsw-barbershop',
+    source: 'https://github.com/Guilherme-RNovaes/fsw-babershop',
     img: '/img/fsw_barber.png',
     direction: 'right',
   },
