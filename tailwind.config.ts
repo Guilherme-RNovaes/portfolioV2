@@ -37,6 +37,7 @@ const config = {
   },
   plugins: [
     require("tailwindcss-animate"),
+    require("@xpd/tailwind-3dtransforms")
   ],
 } satisfies Config
 

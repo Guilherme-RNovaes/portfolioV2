@@ -43,8 +43,8 @@ const ProjectCard = ({ direction, name, img, description, stacks, link, source }
       className={`flex flex-col ${isRightDirection ? 'md:flex-row-reverse' : 'md:flex-row'} w-full items-center justify-between mb-12 gap-x-6`}
     >
       <Dialog>
-        <DialogTrigger className="min-w-[280px] max-w-[280px] md:min-w-[320px] md:max-w-[320px] h-auto hover:scale-105 mb-8 md:mb-0 rounded-xl cursor-zoom-in transition-transform">
-          <Image src={img} width={320} height={320} alt="project image" className="rounded-xl" />
+        <DialogTrigger className={`min-w-[280px] max-w-[280px] md:min-w-[320px] md:max-w-[320px] h-auto md:hover:scale-105 md:perspective-1600 md:hover:rotate-0 mb-8 md:mb-0 rounded-xl cursor-zoom-in transition-transform duration-300`}>
+          <Image src={img} width={320} height={320} alt="project image" className={`rounded-xl transform ${isRightDirection ? 'md:-rotate-y-[20deg] rotate-x-3' : 'md:rotate-y-[20deg] -rotate-x-3'} md:hover:rotate-y-0 md:hover:rotate-x-0 transition-transform duration-300`} />
         </DialogTrigger>
         <DialogContent className="md:min-w-[1080px]">
           <Image src={img} width={1920} height={1080} alt="project image" className="rounded-lg" />
