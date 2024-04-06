@@ -61,7 +61,7 @@ export default function Experience({ }: Props) {
         </div>
       </div>
       <Button variant='primary' asChild className="w-64">
-        <Link href={userProps.curriculum} download={userProps.curriculum} className="w-full">Ver currículo</Link>
+        <Link href={userProps.curriculum} download={userProps.curriculum}>Ver currículo</Link>
       </Button>
     </motion.div>
   )
