@@ -69,7 +69,7 @@ export default function AboutMe({ }: Props) {
       >
         <h2 className="text-blue-400 font-semibold text-xl mb-4 flex flex-col">
           A propósito, eu utilizo Arch linux
-          <span className="text-zinc-400 text-xs">| "I use Arch, btw"</span>
+          <span className="text-zinc-400 text-xs">| {'"I use Arch, btw"'}</span>
         </h2>
         <p className="text-zinc-400 text-justify md:text-left">{userProps.aboutArch}</p>
         <div className="flex flex-col md:flex-row gap-4 mt-8">

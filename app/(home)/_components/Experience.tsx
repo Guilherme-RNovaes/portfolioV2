@@ -29,7 +29,7 @@ export default function Experience({ }: Props) {
     return (
       <motion.div key={props.company} variants={item} initial="hidden" whileInView="visible" transition={{ duration: 0.5 }} className="flex flex-row items-center gap-4 mb-4 md:mb-0 py-3 md:p-3">
         <Avatar className="bg-white text-black flex justify-center">
-          <AvatarImage src={props.image} />
+          <AvatarImage src={props.image} alt="Imagem da empresa" />
           <AvatarFallback className="mt-2"><Image /></AvatarFallback>
         </Avatar>
         <div className="flex flex-col items-start justify-center">

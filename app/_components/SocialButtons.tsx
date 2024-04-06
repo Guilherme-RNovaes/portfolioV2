@@ -12,7 +12,7 @@ type Props = {
 export default function SocialButtons({ variants, classes, iconLink }: Props) {
   return (
     socialProps.map((social) =>
-      <Button variant={variants as 'default'} className={classes}>
+      <Button variant={variants as 'default'} className={classes} key={social.name}>
         <Link href={social.link} target="_blank" rel="noreferrer noopener" className="flex flex-row items-center w-full h-full">
           <social.icon className="w-4 h-4 mr-2 group-hover:text-blue-400" />
           <p>{social.name}</p>
