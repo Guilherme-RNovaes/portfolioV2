@@ -40,7 +40,7 @@ export default function Hero({ }: Props) {
         className="flex flex-col items-start justify-start "
       >
         <h2 className="text-xs md:text-sm uppercase text-gray-500 pb-2 tracking-[6px] md:tracking-[15px]">{userProps.profession}</h2>
-        <h1 className="text-xl uppercase text-sky-200 md:text-4xl font-semibold pb-1 tracking-widest">{userProps.name}</h1>
+        <h1 className="text-xl uppercase bg-gradient-to-r inline-block text-transparent bg-clip-text from-blue-500 via-indigo-300 to-cyan-500 md:text-4xl font-semibold pb-1 tracking-widest">{userProps.name}</h1>
         <div className="w-full flex flex-row flex-wrap items-center">
           {stacks}
         </div>
