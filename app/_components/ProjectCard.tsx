@@ -40,7 +40,7 @@ const ProjectCard = ({ direction, name, img, description, stacks, link, source }
       variants={item}
       initial="hidden"
       whileInView="visible"
-      className={`flex flex-col ${isRightDirection ? 'md:flex-row-reverse' : 'md:flex-row'} w-full items-center justify-between mb-12 gap-x-6`}
+      className={`flex flex-col ${isRightDirection ? 'lg:flex-row-reverse' : 'lg:flex-row'} w-full items-center justify-between mb-12 gap-x-6`}
     >
       <Dialog>
         <DialogTrigger className={`min-w-[280px] max-w-[280px] md:min-w-[320px] md:max-w-[320px] h-auto md:hover:scale-105 md:perspective-1600 md:hover:rotate-0 mb-8 md:mb-0 rounded-xl cursor-zoom-in transition-transform duration-300`}>
