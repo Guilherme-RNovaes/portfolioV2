@@ -77,7 +77,7 @@ export const projectProps: project[] = [
       'Html',
       'Css'
     ],
-    link: 'https://gnovaes-portfolio.vercel.app/',
+    link: 'https://gnovaes-portfolio-old.vercel.app/',
     source: 'https://github.com/Guilherme-RNovaes/Portfolio',
     img: '/img/first_portfolio.png',
     direction: 'right',
