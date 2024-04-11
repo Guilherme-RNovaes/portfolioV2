@@ -38,7 +38,7 @@ export const projectProps: project[] = [
     ],
     link: 'https://guilherme-rnovaes.github.io/netflix-react-clone/',
     source: 'https://github.com/Guilherme-RNovaes/netflix-react-clone',
-    img: '/img/netflix_clone.jpeg',
+    img: '/img/netflix_clone.png',
     direction: 'left',
   },
   {
