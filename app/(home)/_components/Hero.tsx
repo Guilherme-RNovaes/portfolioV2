@@ -13,7 +13,7 @@ export default function Hero({ }: Props) {
     <Badge className="m-1 md:mr-1 text-xs cursor-pointer" variant='secondary' key={index}>{skill}</Badge>
   )
   return (
-    <div className="md:max-w-4xl md:w-full flex flex-row items-center justify-start mt-24 mb-6">
+    <div className="md:max-w-4xl md:w-full flex flex-row items-center justify-start mt-24 mb-6 z-10">
       <motion.div
         initial={{
           x: -40,

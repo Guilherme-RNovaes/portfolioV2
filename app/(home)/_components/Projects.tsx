@@ -39,7 +39,7 @@ export default function Projects({ }: Props) {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
-      className="flex flex-col md:flex-wrap mx-4 mb-8 md:max-w-4xl border border-zinc-400/20 rounded-lg px-8 pt-8 md:justify-start md:mx-6 xl:mx-auto items-start"
+      className="bg-slate-950 z-10 flex flex-col md:flex-wrap mx-4 mb-8 md:max-w-4xl border border-zinc-400/20 rounded-lg px-8 pt-8 md:justify-start md:mx-6 xl:mx-auto items-start"
     >
       <div className="flex flex-row items-center justify-between w-full mb-8">
         <h3 className="uppercase tracking-widest font-semibold text-xl">

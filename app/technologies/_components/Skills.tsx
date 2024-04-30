@@ -62,7 +62,7 @@ export default function Skills({ }: Props) {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="flex flex-col mt-16 mx-4 max-w-4xl items-center md:items-start justify-center"
+      className="flex flex-col mt-16 mx-4 max-w-4xl items-center md:items-start justify-center z-10"
     >
       <div className="m-8">
         <h1 className="text-3xl font-semibold pb-2 tracking-widest">Tecnologias</h1>

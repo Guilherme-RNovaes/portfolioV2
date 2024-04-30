@@ -34,7 +34,7 @@ export default function AboutMe({ }: Props) {
   };
   return (
     <div
-      className="flex flex-col mt-16 md:px-6 mx-4 max-w-4xl items-center justify-center md:w-full"
+      className="flex flex-col mt-16 md:px-6 mx-4 max-w-4xl items-center justify-center md:w-full z-10"
     >
       <motion.div
         variants={item}
