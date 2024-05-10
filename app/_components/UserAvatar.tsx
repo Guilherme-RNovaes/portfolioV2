@@ -18,7 +18,7 @@ export default function UserAvatar({ }: Props) {
       <Avatar
         className="w-10 mx-3 object-cover"
       >
-        <AvatarImage src={userProps.imageUrl} />
+        <AvatarImage src={userProps.imageUrl} alt="User avatar image" />
         <AvatarFallback>GN</AvatarFallback>
       </Avatar>
       <div>
