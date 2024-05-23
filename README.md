@@ -16,7 +16,7 @@ This is the actual version of my personal portfolio.
 
 |Desktop|Mobile|
 |:-:|:-:|
-|<img width="auto" height="410" src="./public/design/desktop_design.png">|<img width="auto" height="410" src="./public/design/mobile_design.png">|
+|<img width="auto" height="380" src="./public/design/desktop_design.png">|<img width="auto" height="380" src="./public/design/mobile_design.png">|
 
 ### Links
 
