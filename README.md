@@ -13,10 +13,9 @@ This is the actual version of my personal portfolio.
 ## General
 
 ### Screenshot
-
-![](./public/design/desktop_design.png)
-
-![](./public/design/mobile_design.png)
+                 Desktop                 |                 Mobile
+:---------------------------------------:|:--------------------------------------:
+![](./public/design/desktop_design.png)  |  ![](./public/design/mobile_design.png)
 
 ### Links
 
