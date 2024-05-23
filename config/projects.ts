@@ -10,6 +10,24 @@ export interface project {
 
 export const projectProps: project[] = [
   {
+    name: 'wedding-invitation',
+    description: 'Aplicação feita com o propósito de servir como um convite para meu casamento, com confirmação de presença e presentes.',
+    stacks: [
+      'Javascript',
+      'Typescript',
+      'NextJs',
+      'Tailwind',
+      'Prisma',
+      'PostgreeSQL',
+      'Supabase',
+      'API'
+    ],
+    link: '/production',
+    source: 'https://github.com/Guilherme-RNovaes/wedding-invitation',
+    img: '/img/wedding_invitation.png',
+    direction: 'left',
+  },
+  {
     name: 'fsw-barbershop',
     description: 'Aplicação feita com o propósito de servir como um aplicativo para barbearias, as quais podem se cadastrar, mostrar seus serviços, valores e realizar agendamentos.',
     stacks: [
