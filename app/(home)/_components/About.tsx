@@ -23,7 +23,7 @@ export default function About({ }: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="flex flex-col bg-slate-950 z-10 text-center md:text-left mx-4 mb-8 md:max-w-4xl border border-zinc-400/20 rounded-lg p-8 justify-evenly md:mx-6 xl:mx-auto items-start"
+      className="flex flex-col bg-slate-950 z-0 text-center md:text-left mx-4 mb-8 md:max-w-4xl border border-zinc-400/20 rounded-lg p-8 justify-evenly md:mx-6 xl:mx-auto items-start"
     >
       <div className="flex items-center justify-between w-full pb-4">
         <h3 className="uppercase tracking-widest font-semibold text-xl">
