@@ -22,7 +22,7 @@ export const projectProps: project[] = [
       'Supabase',
       'API'
     ],
-    link: '/production',
+    link: 'https://convite-de-casamento.vercel.app/',
     source: 'https://github.com/Guilherme-RNovaes/wedding-invitation',
     img: '/img/wedding_invitation.png',
     direction: 'left',
