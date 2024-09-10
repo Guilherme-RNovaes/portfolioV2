@@ -37,9 +37,10 @@ export const projectProps: project[] = [
       'Tailwind',
       'Prisma',
       'PostgreeSQL',
-      'Supabase'
+      'Supabase',
+      'NextAuth'
     ],
-    link: '/production',
+    link: 'https://fsw-babershop.vercel.app/',
     source: 'https://github.com/Guilherme-RNovaes/fsw-babershop',
     img: '/img/fsw_barber.png',
     direction: 'right',
