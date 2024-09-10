@@ -3,7 +3,7 @@ import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 import { FaCss3Alt, FaHtml5, FaNodeJs, FaReact, FaSass } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import { RiJavascriptFill } from "react-icons/ri";
-import { SiAlacritty, SiArchlinux, SiBootstrap, SiDocker, SiExpress, SiFirebase, SiFirefox, SiGit, SiGithub, SiLua, SiMariadb, SiMongodb, SiNeovim, SiNextdotjs, SiNextui, SiOracle, SiPostman, SiPrisma, SiRadixui, SiReactrouter, SiStyledcomponents, SiSupabase, SiTailwindcss, SiVercel, SiVim, SiVisualstudiocode, SiVite } from "react-icons/si";
+import { SiAlacritty, SiArchlinux, SiBootstrap, SiDocker, SiExpress, SiFirebase, SiFirefox, SiGit, SiGithub, SiLua, SiMariadb, SiMongodb, SiNeovim, SiNextdotjs, SiNextui, SiOracle, SiPostman, SiPrisma, SiRadixui, SiReactrouter, SiStyledcomponents, SiSupabase, SiTailwindcss, SiVercel, SiVim, SiVisualstudiocode, SiVite, SiFastify } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 
 export interface skill {
@@ -114,6 +114,11 @@ export const backEnd: skill[] = [
   {
     skill: 'Express',
     icon: SiExpress,
+    stack: 'backend',
+  },
+  {
+    skill: 'Fastify',
+    icon: SiFastify,
     stack: 'backend',
   },
   {
