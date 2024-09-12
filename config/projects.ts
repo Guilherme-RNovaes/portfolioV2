@@ -38,7 +38,7 @@ export const projectProps: project[] = [
       'Prisma',
       'PostgreeSQL',
       'Supabase',
-      'NextAuth'
+      'OAuth'
     ],
     link: 'https://fsw-babershop.vercel.app/',
     source: 'https://github.com/Guilherme-RNovaes/fsw-babershop',
