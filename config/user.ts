@@ -18,7 +18,6 @@ const ageCalc = (date: Date): number => {
   const birthMonth = date.getMonth();
   const actualMonth = date.getMonth();
 
-  // Ajusta a idade se o aniversário ainda não tiver ocorrido este ano
   if (actualMonth < birthMonth || (actualMonth === birthMonth && today.getDate() < date.getDate())) {
     age--;
   }
@@ -26,7 +25,7 @@ const ageCalc = (date: Date): number => {
   return age;
 };
 
-const birthDate = new Date(2000, 6, 24); // Lembre-se que o mês em JavaScript é zero-indexado
+const birthDate = new Date(2000, 7, 24);
 const age = ageCalc(birthDate);
 
 const userProps: User =
