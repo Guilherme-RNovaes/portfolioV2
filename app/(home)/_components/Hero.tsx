@@ -26,7 +26,7 @@ export default function Hero({ }: Props) {
         transition={{ duration: 0.3, }}
       >
         <Avatar
-          className="h-20 w-20 md:h-24 md:w-24 mx-3 md:mx-5 object-cover"
+          className="h-20 w-20 md:h-24 md:w-24 mx-3 md:mx-5 object-cover rounded-2xl border-2 border-blue-300"
         >
           <AvatarImage src={userProps.imageUrl} />
           <AvatarFallback>GN</AvatarFallback>
