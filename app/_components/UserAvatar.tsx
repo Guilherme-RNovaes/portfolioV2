@@ -16,7 +16,7 @@ export default function UserAvatar({ }: Props) {
       className="flex flex-row items-center justify-center"
     >
       <Avatar
-        className="w-10 mx-3 object-cover rounded-xl border border-blue-300"
+        className="w-10 mx-3 object-cover rounded-[0.5rem] border border-blue-300"
       >
         <AvatarImage src={userProps.imageUrl} alt="User avatar image" />
         <AvatarFallback>GN</AvatarFallback>
