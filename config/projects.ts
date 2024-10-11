@@ -11,7 +11,7 @@ export interface project {
 export const projectProps: project[] = [
   {
     name: 'micro-saas-todo-app',
-    description: 'Aplicação feita com o propósito de servir como um convite para meu casamento, com confirmação de presença e presentes.',
+    description: 'Aplicação micro-saas de lista de tarefas, com foco na criação de listas de tarefas personalizáveis, criação de prazos e lembretes.',
     stacks: [
       'Javascript',
       'Typescript',
@@ -28,7 +28,7 @@ export const projectProps: project[] = [
   },
   {
     name: 'project-master',
-    description: 'Aplicação feita com o propósito de servir como um convite para meu casamento, com confirmação de presença e presentes.',
+    description: 'A aplicação em si é um gerenciador de projetos, com funções como criação de projeto, adição de tarefas, to-do e prazos.',
     stacks: [
       'Javascript',
       'Typescript',
