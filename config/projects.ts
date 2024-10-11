@@ -10,6 +10,41 @@ export interface project {
 
 export const projectProps: project[] = [
   {
+    name: 'micro-saas-todo-app',
+    description: 'Aplicação feita com o propósito de servir como um convite para meu casamento, com confirmação de presença e presentes.',
+    stacks: [
+      'Javascript',
+      'Typescript',
+      'NextJs',
+      'Tailwind',
+      'Prisma',
+      'SQLite',
+      'NextAuth'
+    ],
+    link: '/production',
+    source: 'https://github.com/Guilherme-RNovaes/micro-saas-todo-app',
+    img: '/img/micro_saas_todo_app.png',
+    direction: 'left',
+  },
+  {
+    name: 'project-master',
+    description: 'Aplicação feita com o propósito de servir como um convite para meu casamento, com confirmação de presença e presentes.',
+    stacks: [
+      'Javascript',
+      'Typescript',
+      'NextJs',
+      'Tailwind',
+      'Prisma',
+      'PostgreeSQL',
+      'Supabase',
+      'NextAuth'
+    ],
+    link: '/production',
+    source: 'https://github.com/Guilherme-RNovaes/project-master',
+    img: '/img/project_master.png',
+    direction: 'right',
+  },
+  {
     name: 'wedding-invitation',
     description: 'Aplicação feita com o propósito de servir como um convite para meu casamento, com confirmação de presença e presentes.',
     stacks: [
