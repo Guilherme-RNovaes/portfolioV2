@@ -20,8 +20,21 @@ type Props = {
   stacks: string[];
 }
 
-const item = {
+const itemLeft = {
   hidden: { opacity: 0, x: -50 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.3,
+      delayChildren: 1,
+      staggerChildren: 0.8
+    }
+  }
+};
+
+const itemRight = {
+  hidden: { opacity: 0, x: 50 },
   visible: {
     opacity: 1,
     x: 0,
@@ -37,7 +50,7 @@ const ProjectCard = ({ direction, name, img, description, stacks, link, source }
   const isRightDirection = direction === 'right'
   return (
     <motion.div
-      variants={item}
+      variants={isRightDirection ? itemLeft : itemRight}
       initial="hidden"
       whileInView="visible"
       className={`flex flex-col ${isRightDirection ? 'lg:flex-row-reverse' : 'lg:flex-row'} w-full items-center justify-between mb-12 gap-x-6`}
