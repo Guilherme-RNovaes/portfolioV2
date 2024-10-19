@@ -89,16 +89,6 @@ export const frontEnd: skill[] = [
     icon: SiVite,
     stack: 'frontend',
   },
-  {
-    skill: 'Vue',
-    icon: SiVuedotjs,
-    stack: 'frontend',
-  },
-  {
-    skill: 'Nuxt',
-    icon: SiNuxtdotjs,
-    stack: 'frontend',
-  },
 ]
 
 export const backEnd: skill[] = [
