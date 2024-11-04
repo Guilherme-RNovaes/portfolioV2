@@ -10,6 +10,23 @@ export interface project {
 
 export const projectProps: project[] = [
   {
+    name: 'casecobra-ecommerce',
+    description: 'Aplicação ecommerce com foco em criação de capinhas para iphone, a qual o cliente pode escolher e personalizar sua capinha com sua própria imagem.',
+    stacks: [
+      'Javascript',
+      'Typescript',
+      'NextJs',
+      'Tailwind',
+      'Prisma',
+      'MongoDB',
+      'Clerk'
+    ],
+    link: '/production',
+    source: 'https://github.com/Guilherme-RNovaes/casecobra',
+    img: '/img/case_cobra_ecommerce.png',
+    direction: 'right',
+  },
+  {
     name: 'micro-saas-todo-app',
     description: 'Aplicação micro-saas de lista de tarefas, com foco na criação de listas de tarefas personalizáveis, criação de prazos e lembretes.',
     stacks: [
