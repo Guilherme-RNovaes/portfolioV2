@@ -27,7 +27,7 @@ const item = {
 export default function Experience({ }: Props) {
   const experiences = experiencesList.map((props) => {
     return (
-      <motion.div key={props.company} variants={item} initial="hidden" whileInView="visible" transition={{ duration: 0.5 }} className="min-w-[250px] flex flex-row items-center gap-4 mb-4 md:mb-0 py-3 md:p-3">
+      <motion.div key={props.company} variants={item} initial="hidden" whileInView="visible" transition={{ duration: 0.5 }} className="xl:min-w-[250px] flex flex-row items-center gap-4 mb-4 md:mb-0 py-3 md:p-3">
         <Avatar className="bg-white text-black flex justify-center">
           <AvatarImage src={props.image} alt="Imagem da empresa" />
           <AvatarFallback className="mt-2"><Image /></AvatarFallback>
