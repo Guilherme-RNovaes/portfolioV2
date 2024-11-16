@@ -10,6 +10,23 @@ export interface project {
 
 export const projectProps: project[] = [
   {
+    name: 'finance-ai',
+    description: 'Plataforma de gestão financeira que utiliza IA para monitorar suas movimentações.',
+    stacks: [
+      'Javascript',
+      'Typescript',
+      'NextJs',
+      'Tailwind',
+      'Prisma',
+      'PostgreeSQL',
+      'Clerk'
+    ],
+    link: '/production',
+    source: 'https://github.com/Guilherme-RNovaes/finance-ai',
+    img: '/img/finance_ai.png',
+    direction: 'left',
+  },
+  {
     name: 'casecobra-ecommerce',
     description: 'Aplicação ecommerce com foco em criação de capinhas para iphone, a qual o cliente pode escolher e personalizar sua capinha com sua própria imagem.',
     stacks: [
