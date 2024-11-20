@@ -94,10 +94,13 @@ export default function AboutMe({ }: Props) {
         <div className="flex flex-col gap-4 mt-8">
           <div className="flex flex-col gap-4 text-zinc-400 mb-8 text-justify md:text-start">
             <p>
-              À medida que continuo aprimorando minhas habilidades como desenvolvedor fullstack, estou em busca de oportunidades que me permitam aplicar minha paixão pela tecnologia e pela inovação em projetos desafiadores e impactantes. Meu objetivo não é apenas contribuir para o desenvolvimento de soluções de ponta, mas também criar experiências digitais significativas que melhorem a vida das pessoas e impulsionem o crescimento dos negócios. Estou pronto para colaborar em projetos empolgantes e para enfrentar novos desafios que me permitam expandir meus conhecimentos e habilidades.
+              À medida que continuo aprimorando minhas habilidades como desenvolvedor fullstack, dedico-me a aplicar minha paixão pela tecnologia e pela inovação em projetos desafiadores e impactantes. Meu objetivo é não apenas desenvolver soluções de alta qualidade, mas também criar experiências digitais significativas que melhorem a vida das pessoas e impulsionem o crescimento dos negócios dos meus clientes.
             </p>
             <p>
-              Se você está buscando um desenvolvedor dedicado, criativo e motivado, não hesite em entrar em contato comigo. Estou ansioso para participar de conversas envolventes sobre como podemos trabalhar juntos para alcançar resultados incríveis. Fique à vontade para usar as informações de contato abaixo para se conectar comigo. Estou aberto a oportunidades de emprego, colaborações e discussões inspiradoras sobre o mundo fascinante da tecnologia e além.
+              Como desenvolvedor autônomo, estou pronto para colaborar em projetos empolgantes e enfrentar novos desafios que expandam meus conhecimentos e habilidades. Se você busca um profissional dedicado, criativo e motivado para transformar ideias em soluções digitais de valor, estou à disposição.
+            </p>
+            <p>
+              Entre em contato comigo através das informações abaixo para discutirmos como posso ajudar no seu projeto. Estou aberto a colaborações, parcerias e discussões inspiradoras sobre como a tecnologia pode gerar impacto e inovação.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4 md:flex md:flex-row items-center justify-between w-full">
