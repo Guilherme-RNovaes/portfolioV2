@@ -89,7 +89,8 @@ export const projectProps: project[] = [
       'Prisma',
       'PostgreeSQL',
       'Supabase',
-      'API'
+      'API',
+      'Maps'
     ],
     link: 'https://convite-de-casamento.vercel.app/',
     source: 'https://github.com/Guilherme-RNovaes/wedding-invitation',
