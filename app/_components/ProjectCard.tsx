@@ -58,17 +58,17 @@ const ProjectCard = ({ direction, name, img, description, stacks, link, source }
         <DialogTrigger className={`min-w-[280px] max-w-[280px] md:min-w-[320px] md:max-w-[320px] h-auto md:hover:scale-105 md:perspective-1600 md:hover:rotate-0 mb-8 md:mb-0 rounded-xl cursor-zoom-in transition-transform duration-300`}>
           <Image src={img} width={320} height={320} alt="project image" className={`rounded-xl transform ${isRightDirection ? 'md:-rotate-y-[20deg] rotate-x-3' : 'md:rotate-y-[20deg] -rotate-x-3'} md:hover:rotate-y-0 md:hover:rotate-x-0 transition-transform duration-300`} />
         </DialogTrigger>
-        <DialogContent className="md:min-w-[1080px]">
+        <DialogContent className="md:min-w-[1080px] md:pr-12 md:py-2 md:pl-2">
           <Image src={img} width={1920} height={1080} alt="project image" className="rounded-lg" />
         </DialogContent>
       </Dialog>
       <div className={`flex flex-col items-center ${isRightDirection ? 'md:items-start' : 'md:items-end md:text-right'}`}>
         <h1 className="pb-4 font-semibold text-xl">{name}</h1>
-        <p className="text-sm text-zinc-400 pb-4 max-w-xl">{description}</p>
+        <p className="text-sm text-zinc-400 pb-4 max-w-xs md:max-w-xl truncate text-wrap">{description}</p>
         <div className={`flex items-center justify-center ${isRightDirection ? 'md:justify-start' : 'md:justify-end'} gap-2 mb-4 flex-wrap`}>
           {stacks.map((stack, index) => (
             <Badge variant="outline" key={index}>
-              <p className="text-zinc-400 font-semibold">{stack}</p>
+              <p className="text-zinc-500 font-semibold hover:text-zinc-300 transition">{stack}</p>
             </Badge>
           ))}
         </div>
