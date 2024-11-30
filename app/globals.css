@@ -2,23 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+.app-bg {
+  @apply bg-gray-950;
+}
+
 /* width */
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
- 
+
 /* Track */
 ::-webkit-scrollbar-track {
-    background: rgb(15, 23, 42);
+  background: rgb(15, 23, 42);
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(147 197 253);
-    border-radius: 5px;
+  background: rgb(147 197 253);
+  border-radius: 5px;
 }
- 
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(96 165 250);
+  background: rgb(96 165 250);
 }
