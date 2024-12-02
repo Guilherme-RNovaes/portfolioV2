@@ -1,17 +1,12 @@
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
 import userProps from "@/config/user";
-import { Button } from "@/app/_components/ui/button";
 import navigationProps from "@/config/navigation";
 import Link from "next/link";
 import { LinkIcon } from "lucide-react";
 import HomeCard from "@/app/_components/HomeCard";
 
-type Props = {}
-
-export default function About({ }: Props) {
+export default function About() {
   const navigationHref = (
     <Link href={navigationProps[1].href} className="font-semibold text-blue-400 flex flex-row items-center">
       <LinkIcon className="w-4 h-4 mr-1" />

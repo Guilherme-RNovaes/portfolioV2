@@ -3,16 +3,12 @@
 import React from "react";
 import { projectProps } from "@/config/projects";
 import ProjectCard from "@/app/_components/ProjectCard";
-import { motion } from "framer-motion";
 import Link from "next/link";
 import { LinkIcon } from "lucide-react";
 import navigationProps from "@/config/navigation";
-import { Button } from "@/app/_components/ui/button";
 import HomeCard from "@/app/_components/HomeCard";
 
-type Props = {}
-
-export default function Projects({ }: Props) {
+export default function Projects() {
   const firstProjects = projectProps.slice(0, 4)
   const myProjects = firstProjects.map((props) => (
     <ProjectCard
