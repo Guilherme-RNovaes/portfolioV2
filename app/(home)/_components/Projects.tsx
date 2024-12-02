@@ -8,6 +8,7 @@ import Link from "next/link";
 import { LinkIcon } from "lucide-react";
 import navigationProps from "@/config/navigation";
 import { Button } from "@/app/_components/ui/button";
+import HomeCard from "@/app/_components/HomeCard";
 
 type Props = {}
 
@@ -34,24 +35,14 @@ export default function Projects({ }: Props) {
   )
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      viewport={{ once: true }}
-      className="app-bg z-10 flex flex-col md:flex-wrap mx-4 mb-8 md:max-w-4xl border border-zinc-400/20 rounded-lg px-8 pt-8 md:justify-start md:mx-6 xl:mx-auto items-start"
-    >
-      <div className="flex flex-row items-center justify-between w-full mb-8">
-        <h3 className="uppercase tracking-widest font-semibold text-xl">
-          Projetos
-        </h3>
-        <Button variant='link' className="font-semibold">
-          {navigationHref}
-        </Button>
-      </div>
-      <div className="text-center md:text-start">
-        {myProjects}
-      </div>
-    </motion.div>
+    <HomeCard
+      title="Projetos"
+      seeMore={navigationHref}
+      content={(
+        <div className="text-center md:text-start">
+          {myProjects}
+        </div>
+      )}
+    />
   )
 }
