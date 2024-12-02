@@ -9,6 +9,7 @@ import { Image } from "lucide-react";
 import { Button } from "@/app/_components/ui/button";
 import Link from "next/link";
 import userProps from "@/config/user";
+import HomeCard from "@/app/_components/HomeCard";
 
 type Props = {}
 
@@ -46,24 +47,21 @@ export default function Experience({ }: Props) {
   })
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      className="app-bg z-10 flex flex-col md:flex-wrap mx-4 mb-8 md:max-w-4xl border border-zinc-400/20 rounded-lg p-8 md:justify-start md:mx-6 xl:mx-auto items-center"
-    >
-      <div className="pb-4">
-        <h3 className="uppercase tracking-widest font-semibold text-xl pb-4">
-          Experiencia
-        </h3>
-        <div className="flex flex-col md:grid md:grid-cols-2 gap-4 md:px-28 md:pb-4 md:gap-x-20 mx-10 md:mx-4 md:max-w-4xl justify-center md:justify-start items-start md:items-center">
-          {experiences}
-        </div>
-      </div>
-      <Button variant='primary' asChild className="w-64">
-        <Link href={userProps.curriculum} target="_blank" rel="noreferrer noopener">Download CV</Link>
-      </Button>
-    </motion.div>
+    <HomeCard
+      title="Experiencia"
+      content={(
+        <>
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-4 md:px-28 md:pb-4 md:gap-x-20 mx-10 md:mx-4 md:max-w-4xl justify-center md:justify-start items-start md:items-center">
+            {experiences}
+          </div>
+          <div className="flex items-center justify-center">
+            <Button variant='primary' asChild className="w-64">
+              <Link href={userProps.curriculum} target="_blank" rel="noreferrer noopener">Download CV</Link>
+            </Button>
+          </div>
+        </>
+      )}
+    />
   )
 }
 
