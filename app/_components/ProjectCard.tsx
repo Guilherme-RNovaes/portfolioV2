@@ -55,7 +55,7 @@ const ProjectCard = ({ direction, name, img, description, stacks, link, source }
       className={`flex flex-col ${isRightDirection ? 'lg:flex-row-reverse' : 'lg:flex-row'} w-full items-center justify-between mb-12 gap-x-6`}
     >
       <Dialog>
-        <DialogTrigger className={`min-w-[280px] max-w-[280px] md:min-w-[320px] md:max-w-[320px] h-auto md:hover:scale-105 md:perspective-1600 md:hover:rotate-0 mb-8 md:mb-0 rounded-xl cursor-zoom-in transition-transform duration-300`}>
+        <DialogTrigger className={`min-w-[260px] max-w-[260px] md:min-w-[320px] md:max-w-[320px] h-auto md:hover:scale-105 md:perspective-1600 md:hover:rotate-0 mb-8 md:mb-0 rounded-xl cursor-zoom-in transition-transform duration-300`}>
           <Image src={img} width={320} height={320} alt="project image" className={`rounded-xl transform ${isRightDirection ? 'md:-rotate-y-[20deg] rotate-x-3' : 'md:rotate-y-[20deg] -rotate-x-3'} md:hover:rotate-y-0 md:hover:rotate-x-0 transition-transform duration-300`} />
         </DialogTrigger>
         <DialogContent className="md:min-w-[1080px] md:pr-12 md:py-2 md:pl-2">
@@ -72,8 +72,8 @@ const ProjectCard = ({ direction, name, img, description, stacks, link, source }
             </Badge>
           ))}
         </div>
-        <div className="flex flex-row gap-4">
-          <Button asChild variant='primary'>
+        <div className="flex flex-col md:flex-row gap-4">
+          <Button asChild>
             <Link href={link} target="_blank" rel="noreferrer noopener" className="gap-2">
               <Link2 size={18} />
               Visit Page

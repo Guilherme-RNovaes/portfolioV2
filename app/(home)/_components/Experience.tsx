@@ -17,7 +17,7 @@ export default function Experience() {
             {Experiences}
           </div>
           <div className="flex items-center justify-center">
-            <Button variant='primary' asChild className="w-64">
+            <Button asChild className="w-64">
               <Link href={userProps.curriculum} target="_blank" rel="noreferrer noopener">Download CV</Link>
             </Button>
           </div>
