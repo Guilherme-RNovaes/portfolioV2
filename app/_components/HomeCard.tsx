@@ -19,7 +19,7 @@ const HomeCard = ({ title, seeMore, content }: HomeCardProps) => {
         transition={{ duration: 1 }}
         className="flex flex-col app-bg z-10 text-center md:text-left mx-4 mb-8 md:max-w-4xl border border-zinc-400/20 rounded-lg p-8 justify-evenly md:mx-6 xl:mx-auto items-start"
       >
-        <header className={`flex flex-row items-center ${seeMore ? "justify-between" : "justify-start"} w-full mb-8 bg-red-500`}>
+        <header className={`flex flex-row items-center ${seeMore ? "justify-between" : "justify-start"} w-full mb-8`}>
           <h3 className="uppercase tracking-widest font-semibold text-xl">
             {title}
           </h3>
