@@ -24,9 +24,11 @@ export const socialProps: social[] = [
     icon: Mail,
     link: 'mailto:guilherme00rogerio@gmail.com'
   },
-  {
-    name: 'Whatsapp',
-    icon: SiWhatsapp,
-    link: 'https://api.whatsapp.com/send?phone=5516988448896&text=Ol%C3%A1,%20Guilherme!'
-  }
+  /*
+    {
+      name: 'Whatsapp',
+      icon: SiWhatsapp,
+      link: 'https://api.whatsapp.com/send?phone=5516988448896&text=Ol%C3%A1,%20Guilherme!'
+    }
+  */
 ]
